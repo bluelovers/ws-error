@@ -1,0 +1,44 @@
+{
+  "name": "ws-error",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "yarn-tool ws run test",
+    "install:reset-lockfile": "yarn-tool install --reset-lockfile",
+    "lerna:publish": "yarn run prepublishOnly:root && lerna publish && yarn run postpublishOnly",
+    "lerna:publish:yes": "yarn run prepublishOnly:root && lerna publish --yes --bump patch && yarn run postpublishOnly",
+    "preversion": "yt ws run test",
+    "prepare:fix-ws-links": "ynpx --quiet @yarn-tool/fix-ws-links",
+    "prepublishOnly": "echo prepublishOnly",
+    "prepublishOnly:check-bin": "ynpx --quiet @yarn-tool/check-pkg-bin",
+    "prepublishOnly:lockfile": "ynpx --quiet sync-lockfile",
+    "prepublishOnly:root": "yarn run prepublishOnly:check-bin && yarn run prepare:fix-ws-links",
+    "postpublishOnly": "echo postpublishOnly",
+    "ncu": "yarn run ncu:root && yarn run ncu:ws",
+    "ncu:root": "yarn-tool ncu -u",
+    "ncu:ws": "yarn-tool ws exec yarn-tool ncu -- -u",
+    "sort-package-json": "yarn run sort-package-json:root && yarn run sort-package-json:ws",
+    "sort-package-json:root": "yarn-tool sort",
+    "sort-package-json:ws": "yarn-tool ws exec yarn-tool sort"
+  },
+  "resolutions": {},
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@bluelovers/tsconfig": "^1.0.20",
+    "@types/node": "*"
+  },
+  "peerDependencies": {
+    "@bluelovers/conventional-changelog-bluelovers": "*",
+    "@yarn-tool/require-resolve": "*",
+    "lerna": "*",
+    "yarn": "*",
+    "yarn-tool": "*",
+    "ynpx": "*"
+  }
+}
