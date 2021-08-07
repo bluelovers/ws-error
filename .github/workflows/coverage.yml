@@ -21,7 +21,7 @@ jobs:
           node-version: 16
       - name: install
         run: |
-          yarn global add typescript@next ts-jest
+          yarn add -W -D typescript@next ts-jest
           yarn install --frozen-lockfile
       - uses: artiomtr/jest-coverage-report-action@master
         with:
