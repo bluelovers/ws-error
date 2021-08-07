@@ -1,6 +1,6 @@
 {
   "name": "err-errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "keywords": [
     "err",
@@ -35,12 +35,11 @@
   "dependencies": {
     "array-hyper-unique": "^1.1.10",
     "check-iterable": "^1.0.5",
-    "err-errors": "^1.0.0",
-    "err-stack-reduce": "^1.0.0",
+    "err-errors": "^1.0.1",
+    "err-stack-reduce": "^1.0.1",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
     "bluebird": "^3.7.2"
-  },
-  "peerDependencies": {}
+  }
 }
