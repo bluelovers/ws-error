@@ -9,7 +9,7 @@ const check_iterable_1 = require("check-iterable");
 const array_hyper_unique_1 = require("array-hyper-unique");
 const index_1 = require("err-errors/index");
 const index_2 = require("err-stack-reduce/index");
-const index_3 = require("../err-stack-meta/index");
+const index_3 = require("err-stack-meta/index");
 function _isAllowedIterable(arr) {
     return (typeof arr !== 'string' && !(arr instanceof String) && (0, check_iterable_1.isIterable)(arr));
 }

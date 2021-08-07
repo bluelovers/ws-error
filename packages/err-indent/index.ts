@@ -5,7 +5,7 @@ import { isIterable } from 'check-iterable';
 import { array_unique_overwrite } from 'array-hyper-unique';
 import { getSubErrors } from 'err-errors/index';
 import { errStackReduceCore, IOptions as IErrStackReduceOptions } from 'err-stack-reduce/index';
-import { stringifyStackMeta } from '../err-stack-meta/index';
+import { stringifyStackMeta } from 'err-stack-meta/index';
 
 export interface IOptions<T = any>
 {
