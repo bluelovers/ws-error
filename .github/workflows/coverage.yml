@@ -21,7 +21,7 @@ jobs:
           node-version: 16
       - name: install
         run: |
-          yarn add typescript@next ts-jest
+          yarn global add typescript@next ts-jest
       - uses: artiomtr/jest-coverage-report-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
