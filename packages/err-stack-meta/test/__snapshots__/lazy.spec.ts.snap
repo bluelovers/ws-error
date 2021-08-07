@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lazy.spec.ts test 1`] = `
+Object {
+  "error": [AggregateError: ggregateError:
+    at Object],
+  "message": "ggregateError:
+    at Object",
+  "prefix": "AggregateError: ",
+  "stack": Any<String>,
+}
+`;
+
+exports[`lazy.spec.ts test2 1`] = `
+Object {
+  "error": [AggregateError: ggregateError:],
+  "message": "ggregateError:",
+  "prefix": "AggregateError: ",
+  "stack": Any<String>,
+}
+`;
+
+exports[`lazy.spec.ts test3 1`] = `
+Object {
+  "error": [AggregateError: AggregateError:],
+  "message": "AggregateError:",
+  "prefix": "AggregateError: ",
+  "stack": Any<String>,
+}
+`;
+
+exports[`lazy.spec.ts test4 1`] = `
+Object {
+  "error": [AggregateError2: AggregateError:],
+  "message": "AggregateError:",
+  "prefix": "AggregateError2: ",
+  "stack": Any<String>,
+}
+`;

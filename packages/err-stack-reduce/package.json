@@ -1,5 +1,5 @@
 {
-  "name": "err-indent",
+  "name": "err-stack-reduce",
   "version": "1.0.0",
   "description": "",
   "keywords": [
@@ -9,7 +9,7 @@
     "stack",
     "track"
   ],
-  "homepage": "https://github.com/bluelovers/ws-error/tree/master/packages/err-indent#readme",
+  "homepage": "https://github.com/bluelovers/ws-error/tree/master/packages/err-stack-reduce#readme",
   "bugs": {
     "url": "https://github.com/bluelovers/ws-error/issues"
   },
@@ -20,9 +20,6 @@
   "license": "ISC",
   "author": "bluelovers",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "coverage": "yarn run test -- --coverage",
     "lint": "ynpx --quiet eslint -- **/*.ts",
@@ -36,12 +33,7 @@
     "sort-package-json": "yarn-tool sort"
   },
   "dependencies": {
-    "array-hyper-unique": "^1.1.10",
-    "check-iterable": "^1.0.5",
-    "clean-stack": "<4 >=3.0.1",
-    "err-errors": "^1.0.0",
     "err-stack-meta": "^1.0.0",
-    "indent-string": "<5 >=4",
     "tslib": "^2.3.0"
   },
   "devDependencies": {},

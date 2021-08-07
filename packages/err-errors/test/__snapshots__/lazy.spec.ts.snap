@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lazy.spec.ts AggregateError 1`] = `
+Array [
+  [Error: 1],
+  [Error: 3],
+]
+`;
+
+exports[`lazy.spec.ts Bluebird.AggregateError 1`] = `
+Array [
+  [Error: 1],
+  [Error: 3],
+]
+`;

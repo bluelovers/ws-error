@@ -2,7 +2,23 @@
   "name": "ws-error",
   "version": "1.0.0",
   "private": true,
-  "keywords": [],
+  "keywords": [
+    "err",
+    "error",
+    "errors",
+    "stack",
+    "track"
+  ],
+  "homepage": "https://github.com/bluelovers/ws-error#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-error/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-error.git"
+  },
+  "license": "ISC",
+  "author": "bluelovers",
   "workspaces": [
     "packages/*"
   ],
@@ -17,6 +33,7 @@
     "prepublishOnly:check-bin": "ynpx --quiet @yarn-tool/check-pkg-bin",
     "prepublishOnly:lockfile": "ynpx --quiet sync-lockfile",
     "prepublishOnly:root": "yarn run prepublishOnly:check-bin && yarn run prepare:fix-ws-links",
+    "prepublishOnly:update": "yarn run ncu && yarn run sort-package-json",
     "postpublishOnly": "echo postpublishOnly",
     "ncu": "yarn run ncu:root && yarn run ncu:ws",
     "ncu:root": "yarn-tool ncu -u",
@@ -30,7 +47,9 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.36",
     "@bluelovers/tsconfig": "^1.0.20",
+    "@types/jest": "^26.0.24",
     "@types/node": "*"
   },
   "peerDependencies": {

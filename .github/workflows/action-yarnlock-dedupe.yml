@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: yarn.lock deduplication
-        uses: bluelovers/action-yarnlock-dedupe@master
+        uses: bluelovers/action-yarnlock-dedupe@v1
       - name: commit yarn.lock
         run: |
           git config --global user.email "action@github.com"
