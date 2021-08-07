@@ -27,5 +27,5 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           package-manager: yarn
-          test-script: npx -r ts-jest -r jest jest --silent --ci --coverage --testLocationInResults --json --outputFile="report.json"
+          test-script: npx ---package ts-jest ---package jest jest --silent --ci --coverage --testLocationInResults --json --outputFile="report.json"
           #   threshold: 80 # optional parameter
