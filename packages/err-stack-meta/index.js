@@ -1,32 +1,35 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.stringifyStackMeta = exports.errStackMeta = void 0;
+const stackRegex = /(?:\n {4}at .*)+/;
 function errStackMeta(error) {
     let prefix;
     let message = error.message;
     let stack;
     let front;
     let i;
-    if (!/\n/.test(error.message)) {
-        let ls = error.stack.split('\n');
+    const _stack = error.stack;
+    const _message = message;
+    if (!/\n/.test(_message)) {
+        let ls = _stack.split('\n');
         front = ls.shift();
         stack = ls.join('\n');
-        i = front.lastIndexOf(error.message);
-        prefix = error.stack.slice(0, i);
+        i = front.lastIndexOf(_message);
+        prefix = _stack.slice(0, i);
     }
     else {
-        i = error.stack.indexOf(error.message, 1);
+        i = _stack.indexOf(_message, 1);
         if (i !== -1) {
-            prefix = error.stack.slice(0, i);
-            stack = error.stack.slice(i + error.message.length);
-            if (stack.trim().indexOf(error.message) === 0) {
-                i = error.stack.indexOf(error.message, i + error.message.length);
-                prefix = error.stack.slice(0, i);
-                stack = error.stack.slice(i + error.message.length);
+            prefix = _stack.slice(0, i);
+            stack = _stack.slice(i + _message.length);
+            if (stack.trim().indexOf(_message) === 0) {
+                i = _stack.indexOf(_message, i + _message.length);
+                prefix = _stack.slice(0, i);
+                stack = _stack.slice(i + _message.length);
             }
         }
         else {
-            stack = error.stack;
+            stack = _stack;
         }
     }
     stack = stack.replace(/^[\r\n]+/, '');
