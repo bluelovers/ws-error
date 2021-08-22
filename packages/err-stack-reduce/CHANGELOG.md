@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/bluelovers/ws-error/compare/err-stack-reduce@1.0.4...err-stack-reduce@1.0.5) (2021-08-22)
+
+**Note:** Version bump only for package err-stack-reduce
+
+
+
+
+
 ## [1.0.4](https://github.com/bluelovers/ws-error/compare/err-stack-reduce@1.0.3...err-stack-reduce@1.0.4) (2021-08-22)
 
 **Note:** Version bump only for package err-stack-reduce

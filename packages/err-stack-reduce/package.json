@@ -1,6 +1,6 @@
 {
   "name": "err-stack-reduce",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "keywords": [
     "err",
@@ -33,7 +33,7 @@
     "sort-package-json": "yarn-tool sort"
   },
   "dependencies": {
-    "err-stack-meta": "^1.0.4",
+    "err-stack-meta": "^1.0.5",
     "tslib": "^2.3.1"
   }
 }
