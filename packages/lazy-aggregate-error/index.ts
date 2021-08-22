@@ -1,20 +1,43 @@
-import { AggregateError } from './lib/_aggregate';
+import { $AggregateError } from './lib/_aggregate';
 import { bases, SymbolBases } from '@bluelovers/extend-bases';
-import { errStackMeta, IErrStackMeta } from 'err-stack-meta/index';
+import { errStackMeta, IErrStackMeta, stringifyStackMeta } from 'err-stack-meta/index';
+import { messageWithSubErrors, indentSubErrors } from 'err-indent/index';
 
 const SymbolErrStackMeta = Symbol.for('err-stack-meta');
 
-export { SymbolErrStackMeta }
+const SymbolStackInited = Symbol.for('stack:inited');
+const SymbolStackChanged = Symbol.for('stack:changed');
 
-export class AggregateErrorExtra<T> extends bases(AggregateError, Array)
+export { SymbolErrStackMeta, SymbolStackInited, SymbolStackChanged }
+
+// @ts-ignore
+export interface AggregateErrorExtra<T = Error> extends Omit<Array<T>, number | keyof AggregateError | 'toLocaleString'>
+{
+	[k: number]: T
+}
+
+// @ts-ignore
+export class AggregateErrorExtra<T = Error> extends bases($AggregateError, Array)
 {
 	[SymbolErrStackMeta]: IErrStackMeta<this>;
+
+	[SymbolStackInited]: boolean;
+	[SymbolStackChanged]: boolean;
 
 	constructor(errors?: Iterable<any>, message?: string)
 	{
 		errors ??= [];
 
-		let e = new AggregateError(errors, message);
+		errors = [...errors].map(e => {
+			if (typeof e === 'string')
+			{
+				return new Error(e)
+			}
+
+			return e
+		});
+
+		let e = new $AggregateError(errors, message);
 
 		super(
 			e,
@@ -52,15 +75,27 @@ export class AggregateErrorExtra<T> extends bases(AggregateError, Array)
 	override set message(message: string)
 	{
 		this[SymbolBases][0].message = message;
+
+		if (this[SymbolStackInited])
+		{
+			let meta = this.meta();
+
+			meta.message = String(message ?? '') + '\n' + indentSubErrors(this[SymbolBases][0].errors, {}, this[SymbolBases][0]);
+
+			this[SymbolStackChanged] = true
+		}
 	}
 
-	meta(refresh?: boolean)
+	meta(refresh?: boolean): IErrStackMeta<this>
 	{
 		if (refresh == true || typeof this[SymbolErrStackMeta] === 'undefined')
 		{
-			// @ts-ignore
-			this[SymbolErrStackMeta] = errStackMeta(this[SymbolBases][0]);
+			this[SymbolErrStackMeta] = errStackMeta<any>(this[SymbolBases][0]);
+
+			delete this[SymbolErrStackMeta].error;
 		}
+
+		this[SymbolStackInited] = true;
 
 		return this[SymbolErrStackMeta]
 	}
@@ -68,8 +103,19 @@ export class AggregateErrorExtra<T> extends bases(AggregateError, Array)
 	override get stack(): string
 	{
 		let stack = this[SymbolBases][0].stack
+		let meta = this.meta();
 
-		this.meta();
+		if (!this[SymbolStackChanged] || this[SymbolStackChanged])
+		{
+			stack = stringifyStackMeta({
+				...meta,
+				message: messageWithSubErrors(this[SymbolBases][0]),
+			})
+
+			this[SymbolBases][0].stack = stack;
+
+			this[SymbolStackChanged] = false;
+		}
 
 		return stack
 	}
@@ -77,6 +123,8 @@ export class AggregateErrorExtra<T> extends bases(AggregateError, Array)
 	override set stack(stack: string)
 	{
 		this[SymbolBases][0].stack = stack;
+		this.meta();
+		this[SymbolStackChanged] = true;
 	}
 
 	override get errors(): T[]
@@ -89,9 +137,17 @@ export class AggregateErrorExtra<T> extends bases(AggregateError, Array)
 		this[SymbolBases][1] = this[SymbolBases][0].errors = [...errors];
 	}
 
-	override toString()
+	override toString(): string
 	{
 		return this[SymbolBases][0].toString.call(this)
+	}
+
+	/**
+	 * @private
+	 */
+	protected override toLocaleString()
+	{
+		return this.toString()
 	}
 
 }

@@ -8,9 +8,9 @@ if (typeof AggregateError !== 'undefined' && AggregateError !== null)
 }
 else
 {
-	$AggregateError = _AggregateError
+	$AggregateError = require('core-js-pure/features/promise').AggregateError
 }
 
-export { $AggregateError as AggregateError }
+export { $AggregateError }
 
 export default $AggregateError

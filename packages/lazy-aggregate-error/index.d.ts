@@ -1,9 +1,16 @@
 import { IErrStackMeta } from 'err-stack-meta/index';
 declare const SymbolErrStackMeta: unique symbol;
-export { SymbolErrStackMeta };
+declare const SymbolStackInited: unique symbol;
+declare const SymbolStackChanged: unique symbol;
+export { SymbolErrStackMeta, SymbolStackInited, SymbolStackChanged };
+export interface AggregateErrorExtra<T = Error> extends Omit<Array<T>, number | keyof AggregateError | 'toLocaleString'> {
+    [k: number]: T;
+}
 declare const AggregateErrorExtra_base: new (...baseInstances: import("@bluelovers/extend-bases").InstancesArray<[AggregateErrorConstructor, ArrayConstructor]>) => import("@bluelovers/extend-bases").HasBases<[AggregateErrorConstructor, ArrayConstructor]>;
-export declare class AggregateErrorExtra<T> extends AggregateErrorExtra_base {
+export declare class AggregateErrorExtra<T = Error> extends AggregateErrorExtra_base {
     [SymbolErrStackMeta]: IErrStackMeta<this>;
+    [SymbolStackInited]: boolean;
+    [SymbolStackChanged]: boolean;
     constructor(errors?: Iterable<any>, message?: string);
     get code(): string;
     set code(value: string);
@@ -16,5 +23,9 @@ export declare class AggregateErrorExtra<T> extends AggregateErrorExtra_base {
     get errors(): T[];
     set errors(errors: Iterable<T>);
     toString(): string;
+    /**
+     * @private
+     */
+    protected toLocaleString(): string;
 }
 export default AggregateErrorExtra;
