@@ -4,10 +4,15 @@ on:
     branches:
       - master
       - main
+      - next
+      - canary
   pull_request:
     branches:
       - master
       - main
+      - next
+      - canary
+
 jobs:
   coverage:
     runs-on: ubuntu-latest
