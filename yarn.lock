@@ -196,12 +196,18 @@ diff-sequences@^27.0.6:
   resolved "https://registry.npmjs.org/diff-sequences/-/diff-sequences-27.0.6.tgz#3305cb2e55a033924054695cc66019fd7f8e5723"
   integrity sha512-ag6wfpBFyNXZ0p8pcuIDS//D8H062ZQJ3fzYxjpmeKjnz8W4pekL3AI8VohmyZmsWW2PWaHgjsmqR6L13101VQ==
 
-error-stack2@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-1.0.9.tgz#0cab2b7c3a394387627597865ed4d438f1808b18"
-  integrity sha512-FeZ12GJePl3YRVqer0HVmzc+804nXrpwiafLPoVV/WgNke0IZm/C1L1NUUpMbXRxsmbylmQg2vdF+bacuVBoZg==
+err-code@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/err-code/-/err-code-3.0.1.tgz#a444c7b992705f2b120ee320b09972eef331c920"
+  integrity sha512-GiaH0KJUewYok+eeY05IIgjtAe4Yltygk9Wqp1V5yVWLdhf0hYZchRjNIT9bb0mSwRcIusT3cx7PJUf3zEIfUA==
+
+error-stack2@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-1.0.10.tgz#566e0980bb058618c72a52cb3be508b5829f2368"
+  integrity sha512-SdnxmwmtE9DeR33WNpddQrYTo6hx8kHQJbIxQA6LIYDygkLtST8CiojgmqMwyvVlekv6PDI37Ce61CQeP1zFGw==
   dependencies:
     crlf-normalize "^1.0.6"
+    err-code "^3.0.1"
     string-split-keep "^1.0.1"
     ts-type "^1.2.39"
     tslib "^2.3.1"
