@@ -1,5 +1,5 @@
 import { ITSPickExtra } from 'ts-type';
-import { parseStack } from 'error-stack2';
+import { parseStack, formatMessagePrefix } from 'error-stack2';
 
 export interface IErrStackMeta<E extends Error>
 {
@@ -14,7 +14,7 @@ export function errStackMeta<E extends Error>(error: E): IErrStackMeta<E>
 	let es = parseStack(error.stack, error.message);
 
 	return {
-		prefix: es.type + ': ',
+		prefix: formatMessagePrefix(es) + ': ',
 		message: es.message,
 		stack: es.rawTrace.join('\n'),
 		error,

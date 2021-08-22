@@ -5,7 +5,7 @@ const error_stack2_1 = require("error-stack2");
 function errStackMeta(error) {
     let es = (0, error_stack2_1.parseStack)(error.stack, error.message);
     return {
-        prefix: es.type + ': ',
+        prefix: (0, error_stack2_1.formatMessagePrefix)(es) + ': ',
         message: es.message,
         stack: es.rawTrace.join('\n'),
         error,
