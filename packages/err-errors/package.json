@@ -37,7 +37,7 @@
     "check-iterable": "^1.0.5",
     "err-errors": "^1.0.1",
     "err-stack-reduce": "^1.0.1",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.1"
   },
   "devDependencies": {
     "bluebird": "^3.7.2"

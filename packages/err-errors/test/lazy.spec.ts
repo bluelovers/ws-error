@@ -1,14 +1,14 @@
 import getSubErrors from '../index';
 import { AggregateError as BluebirdAggregateError } from 'bluebird';
 import { basename } from 'path';
+import { AggregateErrorExtra } from 'lazy-aggregate-error/index';
 
 const arr = [new Error('1'), new Error('3')] as const;
 
 describe(basename(__filename), () =>
 {
 
-
-	test(`AggregateError`, () =>
+	test(`es.AggregateError`, () =>
 	{
 		let e = new AggregateError(arr);
 
@@ -25,6 +25,24 @@ describe(basename(__filename), () =>
 		e.push(...arr);
 
 		let actual = _check(e);
+
+		expect(actual).toStrictEqual(e.slice());
+
+	});
+
+	test(`AggregateErrorExtra`, () =>
+	{
+		let e = new AggregateErrorExtra();
+
+		e.push(...arr);
+
+		let actual = _check(e);
+
+		expect(actual).toStrictEqual(e.slice());
+
+		e = new AggregateErrorExtra(arr);
+
+		actual = _check(e);
 
 		expect(actual).toStrictEqual(e.slice());
 
