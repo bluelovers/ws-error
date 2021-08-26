@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.4...lazy-aggregate-error@1.0.5) (2021-08-26)
+
+
+### 🐛　Bug Fixes
+
+* Error: Cannot find module 'err-indent/index' ([0f0f8a4](https://github.com/bluelovers/ws-error/commit/0f0f8a4afe443e747552843242cb43b3453751eb))
+
+
+
+
+
 ## [1.0.4](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.3...lazy-aggregate-error@1.0.4) (2021-08-22)
 
 **Note:** Version bump only for package lazy-aggregate-error
