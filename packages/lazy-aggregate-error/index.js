@@ -21,7 +21,7 @@ class AggregateErrorExtra extends (0, extend_bases_1.bases)(_aggregate_1.$Aggreg
             }
             return e;
         });
-        let e = new _aggregate_1.$AggregateError(errors, message);
+        let e = new _aggregate_1.$AggregateError(errors, message !== null && message !== void 0 ? message : '');
         super(e, e.errors);
         e.name = 'AggregateErrorExtra';
         Error.captureStackTrace(e, AggregateErrorExtra);

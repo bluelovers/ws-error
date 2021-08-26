@@ -37,7 +37,7 @@ export class AggregateErrorExtra<T = Error> extends bases($AggregateError, Array
 			return e
 		});
 
-		let e = new $AggregateError(errors, message);
+		let e = new $AggregateError(errors, message ?? '');
 
 		super(
 			e,
