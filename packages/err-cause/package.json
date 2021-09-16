@@ -1,0 +1,43 @@
+{
+  "name": "err-cause",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "err",
+    "error",
+    "errors",
+    "stack",
+    "track"
+  ],
+  "homepage": "https://github.com/bluelovers/ws-error/tree/master/packages/err-cause#readme",
+  "bugs": {
+    "url": "https://github.com/bluelovers/ws-error/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-error.git"
+  },
+  "license": "ISC",
+  "author": "bluelovers",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "yarn run test -- --coverage",
+    "lint": "ynpx --quiet eslint -- **/*.ts",
+    "test": "jest --passWithNoTests",
+    "test:jest": "jest --passWithNoTests",
+    "test:mocha": "ynpx --quiet -p ts-node -p mocha mocha -- --require ts-node/register \"!(node_modules)/**/*.{test,spec}.{ts,tsx}\"",
+    "preversion": "echo preversion && yarn run test",
+    "prepublishOnly:update": "yarn run ncu && yarn run sort-package-json",
+    "ncu": "yarn-tool ncu -u",
+    "sort-package-json": "yarn-tool sort",
+    "tsc:showConfig": "ynpx get-current-tsconfig -p"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "semver": "^7.3.5",
+    "@types/semver": "^7.3.8",
+    "is-plain-object": "< 5 >= 4"
+  },
+  "peerDependencies": {},
+  "packageManager": "yarn@^1.22.11"
+}
