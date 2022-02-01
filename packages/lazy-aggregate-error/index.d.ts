@@ -1,4 +1,4 @@
-import { IErrStackMeta } from 'err-stack-meta/index';
+import { IErrStackMeta } from 'err-stack-meta';
 declare const SymbolErrStackMeta: unique symbol;
 declare const SymbolStackInited: unique symbol;
 declare const SymbolStackChanged: unique symbol;

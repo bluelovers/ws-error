@@ -1,7 +1,7 @@
 import { $AggregateError } from './lib/_aggregate';
 import { bases, SymbolBases } from '@bluelovers/extend-bases';
-import { errStackMeta, IErrStackMeta, stringifyStackMeta } from 'err-stack-meta/index';
-import { messageWithSubErrors, indentSubErrors } from 'err-indent/index';
+import { errStackMeta, IErrStackMeta, stringifyStackMeta } from 'err-stack-meta';
+import { messageWithSubErrors, indentSubErrors } from 'err-indent';
 
 const SymbolErrStackMeta = Symbol.for('err-stack-meta');
 

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/bluelovers/ws-error/compare/err-stack-meta@1.0.5...err-stack-meta@1.0.6) (2022-02-01)
+
+
+### 📦　Code Refactoring
+
+* to tsdx ([16406c6](https://github.com/bluelovers/ws-error/commit/16406c6b1d2745b6bba37ddc603a4fda22fad79f))
+
+
+### ♻️　Chores
+
+* **deps:** update deps ([f085372](https://github.com/bluelovers/ws-error/commit/f085372fd45d669d5a2bafd8664cb5b1013f6ac2))
+
+
+### 🔖　Miscellaneous
+
+* . ([8ed532b](https://github.com/bluelovers/ws-error/commit/8ed532b0aff6e19ed370280c2a2a42f15e654653))
+
+
+
+
+
 ## [1.0.5](https://github.com/bluelovers/ws-error/compare/err-stack-meta@1.0.4...err-stack-meta@1.0.5) (2021-08-22)
 
 
