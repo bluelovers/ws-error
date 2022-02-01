@@ -1,5 +1,5 @@
 import { Options as IIndentOptions } from 'indent-string';
-import { IOptions as IErrStackReduceOptions } from 'err-stack-reduce/index';
+import { IOptions as IErrStackReduceOptions } from 'err-stack-reduce';
 export interface IOptions<T = any> {
     error?: Error;
     handleStack?(stack: string, error: T): string;

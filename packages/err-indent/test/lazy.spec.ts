@@ -1,5 +1,5 @@
 import { basename, extname } from 'path';
-import messageWithSubErrors, { indentSubErrors, indentSubErrorsFromError } from '../index';
+import messageWithSubErrors, { indentSubErrorsFromError } from '../src/index';
 
 describe(basename(__filename, extname(__filename)), () =>
 {

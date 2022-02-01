@@ -3,9 +3,9 @@ import _cleanStack from 'clean-stack';
 import { inspect } from 'util';
 import { isIterable } from 'check-iterable';
 import { array_unique_overwrite } from 'array-hyper-unique';
-import { getSubErrors } from 'err-errors/index';
-import { errStackReduceCore, IOptions as IErrStackReduceOptions } from 'err-stack-reduce/index';
-import { stringifyStackMeta } from 'err-stack-meta/index';
+import { getSubErrors } from 'err-errors';
+import { errStackReduceCore, IOptions as IErrStackReduceOptions } from 'err-stack-reduce';
+import { stringifyStackMeta } from 'err-stack-meta';
 
 export interface IOptions<T = any>
 {
