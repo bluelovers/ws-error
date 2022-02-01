@@ -12,10 +12,10 @@
     reflect.ownkeys "^1.0.2"
     tslib "^2.3.1"
 
-"@bluelovers/tsconfig@^1.0.25":
-  version "1.0.25"
-  resolved "https://registry.npmjs.org/@bluelovers/tsconfig/-/tsconfig-1.0.25.tgz#88cc19fc8bd382569b427bc73376be0237c3f059"
-  integrity sha512-BHjQvRMvIx3kV/tgaOK1cX6FgtLOBG/MsjT/IA8Nno0dGMHHe/r5w9iSPZ44zxRlw5+zVhw4pIN/mz0lnlASuw==
+"@bluelovers/tsconfig@^1.0.28":
+  version "1.0.28"
+  resolved "https://registry.npmjs.org/@bluelovers/tsconfig/-/tsconfig-1.0.28.tgz#6fb35c233af7b36ed1be568d5e15c71b8b486412"
+  integrity sha512-ncNfJUFO44Aa7zm8e+wH1ffwbtEmT+8HMEm9OnWXQpSvDDYml1NSSdOdmyXPvFSsRy4qObK6QVlLhL4meFthqA==
   dependencies:
     tslib "^2.3.0"
 
@@ -54,10 +54,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^27.0.1":
-  version "27.0.1"
-  resolved "https://registry.npmjs.org/@types/jest/-/jest-27.0.1.tgz#fafcc997da0135865311bb1215ba16dba6bdf4ca"
-  integrity sha512-HTLpVXHrY69556ozYkcq47TtQJXpcWAWfkoqz+ZGz2JnmZhzlRjprCIyFnetSy8gpDWwTTGBcRVv1J1I1vBrHw==
+"@types/jest@^27.4.0":
+  version "27.4.0"
+  resolved "https://registry.npmjs.org/@types/jest/-/jest-27.4.0.tgz#037ab8b872067cae842a320841693080f9cb84ed"
+  integrity sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ==
   dependencies:
     jest-diff "^27.0.0"
     pretty-format "^27.0.0"
@@ -67,10 +67,10 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-16.4.13.tgz#7dfd9c14661edc65cccd43a29eb454174642370d"
   integrity sha512-bLL69sKtd25w7p1nvg9pigE4gtKVpGTPojBFLMkGHXuUgap2sLqQt2qUnqmVCDfzGUL0DRNZP+1prIZJbMeAXg==
 
-"@types/semver@^7.3.8":
-  version "7.3.8"
-  resolved "https://registry.npmjs.org/@types/semver/-/semver-7.3.8.tgz#508a27995498d7586dcecd77c25e289bfaf90c59"
-  integrity sha512-D/2EJvAlCEtYFEYmmlGwbGXuK886HzyCc3nZX/tkFTQdEU8jZDAgiv08P162yB17y4ZXZoq7yFAnW4GDBb9Now==
+"@types/semver@^7.3.9":
+  version "7.3.9"
+  resolved "https://registry.npmjs.org/@types/semver/-/semver-7.3.9.tgz#152c6c20a7688c30b967ec1841d31ace569863fc"
+  integrity sha512-L/TMpyURfBkf+o/526Zb6kd/tchUP3iBDEPjqjb+U2MAJhVRxxrmr2fwpe08E7QsV7YLcpq0tUaQ9O9x97ZIxQ==
 
 "@types/yargs-parser@*":
   version "20.2.1"
@@ -101,14 +101,14 @@ ansi-styles@^5.0.0:
   resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-5.2.0.tgz#07449690ad45777d1924ac2abb2fc8895dba836b"
   integrity sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==
 
-array-hyper-unique@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.npmjs.org/array-hyper-unique/-/array-hyper-unique-1.1.10.tgz#dec43bf3d0f6c8679ec90c2729882ec84522439f"
-  integrity sha512-kuqfoHcd42m00XBii0GYfPe3LYZgrTLeiWKSkmzkph7RyiW1GZr1hVWbFA8KUTGKx3nHLY1Rj+i72+xLlNuYNA==
+array-hyper-unique@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npmjs.org/array-hyper-unique/-/array-hyper-unique-2.0.6.tgz#ce3560cab27853f21f86b7eaff1891eaab8a5d77"
+  integrity sha512-OYYVt7iFcj/EMoJ5ujas6AsFYybpsdjF9qQB1I7Xt9c80cg09raPdDV03Y5+XwXmGVQ8z0XlfZ8koy0Gm5dlHw==
   dependencies:
     deep-eql "^4.0.0"
     lodash "^4.17.21"
-    tslib "^2.3.0"
+    tslib "^2.3.1"
 
 array.prototype.flatmap@^1.2.4:
   version "1.2.4"
@@ -170,17 +170,17 @@ color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-core-js-pure@^3.16.2:
-  version "3.16.2"
-  resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.16.2.tgz#0ef4b79cabafb251ea86eb7d139b42bd98c533e8"
-  integrity sha512-oxKe64UH049mJqrKkynWp6Vu0Rlm/BTXO/bJZuN2mmR3RtOFNepLlSWDd1eo16PzHpQAoNG97rLU1V/YxesJjw==
+core-js-pure@^3.20.3:
+  version "3.20.3"
+  resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.20.3.tgz#6cc4f36da06c61d95254efc54024fe4797fd5d02"
+  integrity sha512-Q2H6tQ5MtPtcC7f3HxJ48i4Q7T9ybPKgvWyuH7JXIoNa2pm0KuBnycsET/qw1SLLZYfbsbrZQNMeIOClb+6WIA==
 
-crlf-normalize@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/crlf-normalize/-/crlf-normalize-1.0.6.tgz#c0b7e0c976cbc1f70e78e8208035941c7d704acc"
-  integrity sha512-zaHJLQfY3XO/m5WpgW1c4rts81qhp3dSN0OaihoJ6CqdqUG5fLzPYhfnSViv1R/HGtQYB6DDv/8nDrElxg9IHQ==
+crlf-normalize@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/crlf-normalize/-/crlf-normalize-1.0.7.tgz#84044949d93b708b3623abd4661fe8173c3e543c"
+  integrity sha512-USifFsvW0fI8BuHpR0zqHjr2uQdbQ5awWmk0UbWF/Y3jScR+6gFqukzfavi2FzrjQ65ihSMPNGx07K6CPno8sQ==
   dependencies:
-    tslib "^2.3.0"
+    ts-type "^2.1.4"
 
 deep-eql@^4.0.0:
   version "4.0.0"
@@ -206,15 +206,15 @@ err-code@^3.0.1:
   resolved "https://registry.npmjs.org/err-code/-/err-code-3.0.1.tgz#a444c7b992705f2b120ee320b09972eef331c920"
   integrity sha512-GiaH0KJUewYok+eeY05IIgjtAe4Yltygk9Wqp1V5yVWLdhf0hYZchRjNIT9bb0mSwRcIusT3cx7PJUf3zEIfUA==
 
-error-stack2@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-1.0.12.tgz#d43d2257a8925e12ab2b972c6948e053f09170d3"
-  integrity sha512-xRT79eaRta5E5qp+tMopFuWBXAu4QxbOEfiWJTVEztl2v8wjdJsBPtPyKBsQw5yLwpSpD9+1EAewCCJ+uWzXMw==
+error-stack2@^1.0.18:
+  version "1.0.18"
+  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-1.0.18.tgz#3b85ccd0952b6f82ab5d62b9a19d5871f37f14be"
+  integrity sha512-YHTYTcwztEp0diPL+Ixu81QR4wQNNcsGEJu14D3XeU3L8eChfLvvohfog+zgYdpCfggg+HgnROFJamVLjprIKg==
   dependencies:
-    crlf-normalize "^1.0.6"
+    crlf-normalize "^1.0.7"
     err-code "^3.0.1"
-    string-split-keep "^1.0.1"
-    ts-type "^1.2.39"
+    string-split-keep2 "^1.0.2"
+    ts-type "^2.1.4"
     tslib "^2.3.1"
 
 es-abstract@^1.18.0-next.1:
@@ -471,10 +471,10 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
-string-split-keep@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/string-split-keep/-/string-split-keep-1.0.1.tgz#a1b6fc540f685da7ede019ec28bc1ad63bf9ba7e"
-  integrity sha1-obb8VA9oXaft4BnsKLwa1jv5un4=
+string-split-keep2@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/string-split-keep2/-/string-split-keep2-1.0.2.tgz#db255a44f6d11e95004ebc0cf47b8fc8412076fa"
+  integrity sha512-/c6O1DASLhPV/fX17fiilLhRf2KmhVV+/tWOQczVt/9SQMBlio/1VsCcVWpjhRxIFuLc+P21zHWjQYZ8CsACTw==
 
 string.prototype.trimend@^1.0.4:
   version "1.0.4"
@@ -504,12 +504,12 @@ symbol.inspect@^1.0.1:
   resolved "https://registry.npmjs.org/symbol.inspect/-/symbol.inspect-1.0.1.tgz#e13125b8038c4996eb0dfa1567332ad4dcd0763f"
   integrity sha512-YQSL4duoHmLhsTD1Pw8RW6TZ5MaTX5rXJnqacJottr2P2LZBF/Yvrc3ku4NUpMOm8aM0KOCqM+UAkMA5HWQCzQ==
 
-ts-type@^1.2.39:
-  version "1.2.39"
-  resolved "https://registry.npmjs.org/ts-type/-/ts-type-1.2.39.tgz#2a572561613355b38af6526cd372b51d2be18530"
-  integrity sha512-5HEKeeFAcEGaRw0GMQSp2T0vFl53CPadNB3QfUN5Drhw8Ov/7JWGbcOCw2ElWrl6bwdsAUSMqkzMMTRZi7eTiQ==
+ts-type@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.npmjs.org/ts-type/-/ts-type-2.1.4.tgz#d268d52ac054ef3076bf1c3b2fde0d4d5496e6a3"
+  integrity sha512-wnajiiIMhn/RHJ1oPld95siKmMJrOgaT6+rMmC8vO1LORgDFEzKP2nBmEFM5b4XVe7Q0J5KcU9oRJFzju7UzrA==
   dependencies:
-    tslib "^2.3.0"
+    tslib "^2.3.1"
     typedarray-dts "^1.0.0"
 
 tslib@^2.3.0, tslib@^2.3.1:

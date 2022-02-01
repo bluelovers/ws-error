@@ -33,7 +33,7 @@
     "sort-package-json": "yarn-tool sort"
   },
   "dependencies": {
-    "array-hyper-unique": "^1.1.10",
+    "array-hyper-unique": "^2.0.6",
     "check-iterable": "^1.0.5",
     "err-stack-reduce": "^1.0.5",
     "tslib": "^2.3.1"

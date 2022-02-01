@@ -33,7 +33,7 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "devDependencies": {
-    "@types/semver": "^7.3.8",
+    "@types/semver": "^7.3.9",
     "is-plain-object": "< 5 >= 4",
     "semver": "^7.3.5"
   },

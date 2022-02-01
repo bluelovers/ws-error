@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.messageWithSubErrors = exports.indentSubErrorsFromError = exports.indentSubErrors = exports.indentSubErrorMessage = exports.errorsToMessageList = exports._isAllowedIterable = void 0;
 const tslib_1 = require("tslib");
-const indent_string_1 = (0, tslib_1.__importDefault)(require("indent-string"));
-const clean_stack_1 = (0, tslib_1.__importDefault)(require("clean-stack"));
+const indent_string_1 = tslib_1.__importDefault(require("indent-string"));
+const clean_stack_1 = tslib_1.__importDefault(require("clean-stack"));
 const util_1 = require("util");
 const check_iterable_1 = require("check-iterable");
 const array_hyper_unique_1 = require("array-hyper-unique");
