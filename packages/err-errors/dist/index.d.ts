@@ -5,3 +5,5 @@
  */
 export declare function getSubErrors<T>(mainError: Error): Iterable<T>;
 export default getSubErrors;
+
+export {};

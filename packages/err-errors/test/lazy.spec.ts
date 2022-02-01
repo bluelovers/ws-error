@@ -1,7 +1,7 @@
-import getSubErrors from '../index';
+import getSubErrors from '../src/index';
 import { AggregateError as BluebirdAggregateError } from 'bluebird';
 import { basename } from 'path';
-import { AggregateErrorExtra } from 'lazy-aggregate-error/index';
+import { AggregateErrorExtra } from 'lazy-aggregate-error';
 
 const arr = [new Error('1'), new Error('3')] as const;
 
