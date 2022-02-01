@@ -1,4 +1,4 @@
-import errStackMeta from '../index';
+import errStackMeta from '../src/index';
 import { basename } from 'path';
 
 describe(basename(__filename), () =>
@@ -44,7 +44,6 @@ describe(basename(__filename), () =>
 function _check(e: Error)
 {
 	let actual = errStackMeta(e);
-	let expected;
 
 	expect(actual.prefix).toContain(e.name);
 	expect(actual.stack.length).toBeGreaterThan(0);

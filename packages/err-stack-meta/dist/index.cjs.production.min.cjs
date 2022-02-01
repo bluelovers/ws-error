@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("error-stack2");function r(r){let t=e.parseStack(r.stack,r.message);return{prefix:e.formatMessagePrefix(t)+": ",message:t.message,stack:t.rawTrace.join("\n"),error:r}}exports.default=r,exports.errStackMeta=r,exports.stringifyStackMeta=function(e,r){var t;return null!==(t=r)&&void 0!==t||(r=e.stack),r.length&&(r=`\n${r}`),`${e.prefix}${e.message}${r}`};
+//# sourceMappingURL=index.cjs.production.min.cjs.map

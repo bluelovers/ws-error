@@ -1,4 +1,4 @@
-import { ITSPickExtra } from 'ts-type';
+import { ITSPickExtra } from 'ts-type/lib/type/record';
 import { parseStack, formatMessagePrefix } from 'error-stack2';
 
 export interface IErrStackMeta<E extends Error>

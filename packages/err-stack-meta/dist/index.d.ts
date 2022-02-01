@@ -1,4 +1,4 @@
-import { ITSPickExtra } from 'ts-type';
+import { ITSPickExtra } from 'ts-type/lib/type/record';
 export interface IErrStackMeta<E extends Error> {
     prefix: string;
     message: string;
