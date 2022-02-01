@@ -1,0 +1,2 @@
+"use strict";function r(r){return r instanceof Error}function e(e,o){if(!r(e))throw new TypeError(`error should instanceof Error: ${e}`);let t=r(o)?o:o.cause;if(!r(t))throw new TypeError(`cause should instanceof Error: ${t}`);return e.cause=t,e}Object.defineProperty(exports,"__esModule",{value:!0}),exports._isError=r,exports.default=e,exports.errCause=e,exports.isSupportedErrorCause=function(r=Error){try{const e=new Error;return new r("",{cause:e}).cause===e}catch(r){}return null};
+//# sourceMappingURL=index.cjs.production.min.cjs.map

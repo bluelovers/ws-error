@@ -1,5 +1,4 @@
-import { basename, extname } from 'path';
-import { errCause, isSupportedErrorCause } from '../index';
+import { errCause, isSupportedErrorCause } from '../src/index';
 import { gte } from 'semver';
 
 test(`isSupportedErrorCause: node = ${process.versions.node}, v8 = ${process.versions.v8}`, () =>

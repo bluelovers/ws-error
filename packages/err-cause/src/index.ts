@@ -1,4 +1,4 @@
-export function _isError<E extends Error>(error): error is E
+export function _isError<E extends Error>(error: unknown): error is E
 {
 	return error instanceof Error
 }
