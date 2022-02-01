@@ -1,4 +1,4 @@
-import errStackReduceCore from '../index';
+import errStackReduceCore from '../src/index';
 import { basename } from 'path';
 
 describe(basename(__filename), () =>
@@ -9,7 +9,7 @@ describe(basename(__filename), () =>
 		let mainError = new Error();
 		let error = new Error();
 
-		let { fn, actual } = _check(mainError, error);
+		let {} = _check(mainError, error);
 
 	});
 

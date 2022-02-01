@@ -1,4 +1,4 @@
-import { errStackMeta, stringifyStackMeta } from 'err-stack-meta/index';
+import { errStackMeta } from 'err-stack-meta';
 
 export interface IOptions
 {
