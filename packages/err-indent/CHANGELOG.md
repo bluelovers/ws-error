@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.4...err-indent@1.0.5) (2022-02-01)
+
+
+### 📦　Code Refactoring
+
+* to tsdx ([ffa62fc](https://github.com/bluelovers/ws-error/commit/ffa62fc0441a5e8c8e9a6340fa943e00bdd8471f))
+
+
+### ♻️　Chores
+
+* **deps:** update deps ([f085372](https://github.com/bluelovers/ws-error/commit/f085372fd45d669d5a2bafd8664cb5b1013f6ac2))
+
+
+
+
+
 ## [1.0.4](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.3...err-indent@1.0.4) (2021-08-22)
 
 **Note:** Version bump only for package err-indent

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/bluelovers/ws-error/compare/err-errors@1.0.4...err-errors@1.0.5) (2022-02-01)
+
+
+### 📦　Code Refactoring
+
+* to tsdx ([c62825d](https://github.com/bluelovers/ws-error/commit/c62825df975fe6ab4df56a573466605066301a69))
+
+
+### ♻️　Chores
+
+* **deps:** update deps ([f085372](https://github.com/bluelovers/ws-error/commit/f085372fd45d669d5a2bafd8664cb5b1013f6ac2))
+
+
+
+
+
 ## [1.0.4](https://github.com/bluelovers/ws-error/compare/err-errors@1.0.3...err-errors@1.0.4) (2021-08-22)
 
 **Note:** Version bump only for package err-errors

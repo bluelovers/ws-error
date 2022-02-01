@@ -1,6 +1,6 @@
 {
   "name": "err-indent",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "keywords": [
     "err",
@@ -75,8 +75,8 @@
     "array-hyper-unique": "^2.0.6",
     "check-iterable": "^1.0.5",
     "clean-stack": "<4 >=3.0.1",
-    "err-errors": "^1.0.4",
-    "err-stack-meta": "^1.0.5",
+    "err-errors": "^1.0.5",
+    "err-stack-meta": "^1.0.7",
     "indent-string": "<5 >=4",
     "tslib": "^2.3.1"
   },
