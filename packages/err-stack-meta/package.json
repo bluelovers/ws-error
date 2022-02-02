@@ -72,7 +72,7 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "error-stack2": "^1.0.18",
+    "error-stack2": "^2.0.2",
     "ts-type": "^2.1.4",
     "tslib": "^2.3.1"
   },

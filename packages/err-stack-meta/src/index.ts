@@ -30,7 +30,7 @@ export function stringifyStackMeta(meta: ITSPickExtra<IErrStackMeta<any>, 'prefi
 		stack = `\n${stack}`;
 	}
 
-	return `${meta.prefix}${meta.message}${stack}`
+	return `${meta.prefix}${meta.message ?? ''}${stack}`
 }
 
 export default errStackMeta
