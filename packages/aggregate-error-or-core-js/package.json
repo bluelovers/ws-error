@@ -1,6 +1,6 @@
 {
   "name": "aggregate-error-or-core-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "use global AggregateError or from core-js-pure",
   "keywords": [
     "err",
@@ -75,7 +75,5 @@
   "dependencies": {
     "core-js-pure": "^3.21.0"
   },
-  "devDependencies": {},
-  "peerDependencies": {},
   "packageManager": "yarn@^1.22.11"
 }

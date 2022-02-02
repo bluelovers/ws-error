@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.7...lazy-aggregate-error@1.0.8) (2022-02-02)
+
+
+### 📦　Code Refactoring
+
+* tsdx ([6164131](https://github.com/bluelovers/ws-error/commit/6164131c5f3c3064c6a226758977078f7f67f4dc))
+* use `aggregate-error-or-core-js` ([4fb3eb3](https://github.com/bluelovers/ws-error/commit/4fb3eb36bc71759dedfc71fa6fc67e09bc6b11cc))
+
+
+
+
+
 ## [1.0.7](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.6...lazy-aggregate-error@1.0.7) (2022-02-01)
 
 
