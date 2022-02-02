@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/bluelovers/ws-error/compare/err-stack-reduce@1.0.7...err-stack-reduce@1.0.8) (2022-02-02)
+
+
+### ✨　Features
+
+* update tsconfig.json ([e87b3dc](https://github.com/bluelovers/ws-error/commit/e87b3dca318070a92d027512121e9d9f8613de01))
+
+
+### 🚨　Tests
+
+* update test ([44ca940](https://github.com/bluelovers/ws-error/commit/44ca9405d8e6e2af1ef93d07960f60844a953bef))
+* update test ([11ea259](https://github.com/bluelovers/ws-error/commit/11ea259ef0954179ef8150bac7647acb6edcc987))
+
+
+
+
+
 ## [1.0.7](https://github.com/bluelovers/ws-error/compare/err-stack-reduce@1.0.5...err-stack-reduce@1.0.7) (2022-02-01)
 
 

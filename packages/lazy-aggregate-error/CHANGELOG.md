@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.9](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.8...lazy-aggregate-error@1.0.9) (2022-02-02)
+
+
+### 🐛　Bug Fixes
+
+* avoid throw error when no message and errors ([fd15151](https://github.com/bluelovers/ws-error/commit/fd151519cf492134d3f1a46269c872a045c38be6))
+
+
+### ✨　Features
+
+* update tsconfig.json ([e87b3dc](https://github.com/bluelovers/ws-error/commit/e87b3dca318070a92d027512121e9d9f8613de01))
+
+
+
+
+
 ## [1.0.8](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.7...lazy-aggregate-error@1.0.8) (2022-02-02)
 
 

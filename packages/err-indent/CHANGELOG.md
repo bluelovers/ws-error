@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.5...err-indent@1.0.6) (2022-02-02)
+
+
+### 🐛　Bug Fixes
+
+* return `undefined` when no message ([d41fd42](https://github.com/bluelovers/ws-error/commit/d41fd422a5784390eac93780f304646266b69e2f))
+
+
+### ✨　Features
+
+* update tsconfig.json ([e87b3dc](https://github.com/bluelovers/ws-error/commit/e87b3dca318070a92d027512121e9d9f8613de01))
+
+
+
+
+
 ## [1.0.5](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.4...err-indent@1.0.5) (2022-02-01)
 
 
