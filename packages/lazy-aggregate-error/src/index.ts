@@ -28,7 +28,8 @@ export class AggregateErrorExtra<T = Error> extends bases($AggregateError, Array
 	{
 		errors ??= [];
 
-		errors = [...errors].map(e => {
+		errors = [...errors].map(e =>
+		{
 			if (typeof e === 'string')
 			{
 				return new Error(e)
@@ -56,10 +57,9 @@ export class AggregateErrorExtra<T = Error> extends bases($AggregateError, Array
 		return this[SymbolBases][0].code;
 	}
 
-	set code(value: string)
+	set code(code: string)
 	{
-		// @ts-ignore
-		this[SymbolBases][0].code = code;
+		(this[SymbolBases][0] as any).code = code;
 	}
 
 	override set name(value: string)

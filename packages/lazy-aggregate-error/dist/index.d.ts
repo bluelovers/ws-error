@@ -13,7 +13,7 @@ export declare class AggregateErrorExtra<T = Error> extends AggregateErrorExtra_
     [SymbolStackChanged]: boolean;
     constructor(errors?: Iterable<any>, message?: string);
     get code(): string;
-    set code(value: string);
+    set code(code: string);
     set name(value: string);
     get message(): string;
     set message(message: string);
