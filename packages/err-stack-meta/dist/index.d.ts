@@ -1,5 +1,6 @@
-import { ITSPickExtra } from 'ts-type/lib/type/record';
-export interface IErrStackMeta<E extends Error> {
+import { ITSPickExtra, ITSRequiredPick } from 'ts-type/lib/type/record';
+import { IParsed } from 'error-stack2';
+export interface IErrStackMeta<E extends Error> extends ITSRequiredPick<IParsed, 'rawTrace' | 'type'> {
     prefix: string;
     message: string;
     stack: string;

@@ -50,6 +50,8 @@ function _check(e: Error)
 	expect(actual.stack).toMatch(/^\s+at /);
 
 	expect(actual).toMatchSnapshot({
+		rawTrace: expect.any(Array),
 		stack: expect.any(String),
+		type: e.name,
 	});
 }

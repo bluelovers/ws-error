@@ -7,7 +7,9 @@ Object {
   "message": "ggregateError:
     at Object",
   "prefix": "AggregateError: ",
+  "rawTrace": Any<Array>,
   "stack": Any<String>,
+  "type": "AggregateError",
 }
 `;
 
@@ -16,7 +18,9 @@ Object {
   "error": [AggregateError: ggregateError:],
   "message": "ggregateError:",
   "prefix": "AggregateError: ",
+  "rawTrace": Any<Array>,
   "stack": Any<String>,
+  "type": "AggregateError",
 }
 `;
 
@@ -25,7 +29,9 @@ Object {
   "error": [AggregateError: AggregateError:],
   "message": "AggregateError:",
   "prefix": "AggregateError: ",
+  "rawTrace": Any<Array>,
   "stack": Any<String>,
+  "type": "AggregateError",
 }
 `;
 
@@ -34,6 +40,8 @@ Object {
   "error": [AggregateError2: AggregateError:],
   "message": "AggregateError:",
   "prefix": "AggregateError2: ",
+  "rawTrace": Any<Array>,
   "stack": Any<String>,
+  "type": "AggregateError2",
 }
 `;

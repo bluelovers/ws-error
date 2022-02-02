@@ -1,7 +1,7 @@
-import { ITSPickExtra } from 'ts-type/lib/type/record';
-import { parseStack, formatMessagePrefix } from 'error-stack2';
+import { ITSPickExtra, ITSRequiredPick } from 'ts-type/lib/type/record';
+import { parseStack, formatMessagePrefix, IParsed } from 'error-stack2';
 
-export interface IErrStackMeta<E extends Error>
+export interface IErrStackMeta<E extends Error> extends ITSRequiredPick<IParsed, 'rawTrace' | 'type'>
 {
 	prefix: string;
 	message: string;
@@ -14,8 +14,10 @@ export function errStackMeta<E extends Error>(error: E): IErrStackMeta<E>
 	let es = parseStack(error.stack, error.message);
 
 	return {
+		type: es.type,
 		prefix: formatMessagePrefix(es) + ': ',
 		message: es.message,
+		rawTrace: es.rawTrace,
 		stack: es.rawTrace.join('\n'),
 		error,
 	}
