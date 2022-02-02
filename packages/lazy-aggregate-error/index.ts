@@ -1,4 +1,4 @@
-import { $AggregateError } from './lib/_aggregate';
+import { $AggregateError } from 'aggregate-error-or-core-js';
 import { bases, SymbolBases } from '@bluelovers/extend-bases';
 import { errStackMeta, IErrStackMeta, stringifyStackMeta } from 'err-stack-meta';
 import { messageWithSubErrors, indentSubErrors } from 'err-indent';

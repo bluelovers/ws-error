@@ -1,0 +1,12 @@
+{
+  "extends": "@bluelovers/tsconfig/tsdx/index.json",
+  "compilerOptions": {
+    "importHelpers": false,
+    "noEmit": true,
+    "module": "nodenext",
+    "target": "es2021",
+    "lib": [
+      "es2021"
+    ]
+  }
+}

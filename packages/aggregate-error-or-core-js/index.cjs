@@ -7,7 +7,7 @@ if (typeof AggregateError !== 'undefined' && AggregateError !== null) {
     exports.$AggregateError = $AggregateError = AggregateError;
 }
 else {
-    exports.$AggregateError = $AggregateError = require('core-js-pure/features/promise').AggregateError;
+    exports.$AggregateError = $AggregateError = require('core-js-pure/features/aggregate-error');
 }
 exports.default = $AggregateError;
-//# sourceMappingURL=_aggregate.js.map
+//# sourceMappingURL=index.cjs.map

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AggregateErrorExtra = exports.SymbolStackChanged = exports.SymbolStackInited = exports.SymbolErrStackMeta = void 0;
-const _aggregate_1 = require("./lib/_aggregate");
+const aggregate_error_or_core_js_1 = require("aggregate-error-or-core-js");
 const extend_bases_1 = require("@bluelovers/extend-bases");
 const err_stack_meta_1 = require("err-stack-meta");
 const err_indent_1 = require("err-indent");
@@ -12,7 +12,7 @@ exports.SymbolStackInited = SymbolStackInited;
 const SymbolStackChanged = Symbol.for('stack:changed');
 exports.SymbolStackChanged = SymbolStackChanged;
 // @ts-ignore
-class AggregateErrorExtra extends (0, extend_bases_1.bases)(_aggregate_1.$AggregateError, Array) {
+class AggregateErrorExtra extends (0, extend_bases_1.bases)(aggregate_error_or_core_js_1.$AggregateError, Array) {
     constructor(errors, message) {
         errors !== null && errors !== void 0 ? errors : (errors = []);
         errors = [...errors].map(e => {
@@ -21,7 +21,7 @@ class AggregateErrorExtra extends (0, extend_bases_1.bases)(_aggregate_1.$Aggreg
             }
             return e;
         });
-        let e = new _aggregate_1.$AggregateError(errors, message !== null && message !== void 0 ? message : '');
+        let e = new aggregate_error_or_core_js_1.$AggregateError(errors, message !== null && message !== void 0 ? message : '');
         super(e, e.errors);
         e.name = 'AggregateErrorExtra';
         Error.captureStackTrace(e, AggregateErrorExtra);
