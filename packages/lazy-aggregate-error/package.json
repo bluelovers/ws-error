@@ -75,6 +75,7 @@
     "aggregate-error-or-core-js": "^1.0.1",
     "err-indent": "^1.0.5",
     "err-stack-meta": "^1.0.7",
+    "error-stack2": "^2.0.2",
     "symbol.inspect": "^1.0.1",
     "tslib": "^2.3.1"
   },

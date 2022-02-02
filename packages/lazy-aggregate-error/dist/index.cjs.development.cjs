@@ -6,6 +6,7 @@ var aggregateErrorOrCoreJs = require('aggregate-error-or-core-js');
 var extendBases = require('@bluelovers/extend-bases');
 var errStackMeta = require('err-stack-meta');
 var errIndent = require('err-indent');
+var errorStack2 = require('error-stack2');
 
 const SymbolErrStackMeta = /*#__PURE__*/Symbol.for('err-stack-meta');
 const SymbolStackInited = /*#__PURE__*/Symbol.for('stack:inited');
@@ -69,8 +70,14 @@ class AggregateErrorExtra extends extendBases.bases(aggregateErrorOrCoreJs.$Aggr
     let meta = this.meta();
 
     if (!this[SymbolStackChanged] || this[SymbolStackChanged]) {
-      stack = errStackMeta.stringifyStackMeta({ ...meta,
-        message: errIndent.messageWithSubErrors(this[extendBases.SymbolBases][0])
+      let message = errIndent.messageWithSubErrors(this[extendBases.SymbolBases][0]);
+
+      if (message === '') {
+        message = void 0;
+      }
+
+      stack = errorStack2.stringifyErrorStack({ ...meta,
+        message
       });
       this[extendBases.SymbolBases][0].stack = stack;
       this[SymbolStackChanged] = false;

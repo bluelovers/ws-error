@@ -1,7 +1,8 @@
 import { $AggregateError } from 'aggregate-error-or-core-js';
 import { bases, SymbolBases } from '@bluelovers/extend-bases';
-import { errStackMeta, stringifyStackMeta } from 'err-stack-meta';
+import { errStackMeta } from 'err-stack-meta';
 import { indentSubErrors, messageWithSubErrors } from 'err-indent';
+import { stringifyErrorStack } from 'error-stack2';
 
 const SymbolErrStackMeta = /*#__PURE__*/Symbol.for('err-stack-meta');
 const SymbolStackInited = /*#__PURE__*/Symbol.for('stack:inited');
@@ -65,8 +66,14 @@ class AggregateErrorExtra extends bases($AggregateError, Array) {
     let meta = this.meta();
 
     if (!this[SymbolStackChanged] || this[SymbolStackChanged]) {
-      stack = stringifyStackMeta({ ...meta,
-        message: messageWithSubErrors(this[SymbolBases][0])
+      let message = messageWithSubErrors(this[SymbolBases][0]);
+
+      if (message === '') {
+        message = void 0;
+      }
+
+      stack = stringifyErrorStack({ ...meta,
+        message
       });
       this[SymbolBases][0].stack = stack;
       this[SymbolStackChanged] = false;

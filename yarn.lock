@@ -206,10 +206,10 @@ err-code@^3.0.1:
   resolved "https://registry.npmjs.org/err-code/-/err-code-3.0.1.tgz#a444c7b992705f2b120ee320b09972eef331c920"
   integrity sha512-GiaH0KJUewYok+eeY05IIgjtAe4Yltygk9Wqp1V5yVWLdhf0hYZchRjNIT9bb0mSwRcIusT3cx7PJUf3zEIfUA==
 
-error-stack2@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-1.0.18.tgz#3b85ccd0952b6f82ab5d62b9a19d5871f37f14be"
-  integrity sha512-YHTYTcwztEp0diPL+Ixu81QR4wQNNcsGEJu14D3XeU3L8eChfLvvohfog+zgYdpCfggg+HgnROFJamVLjprIKg==
+error-stack2@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-2.0.2.tgz#3d1860ea7aee25d895802b8db7fbe8fc11af62c3"
+  integrity sha512-wgATLyzVLbV6uOyuNzPjL9/BXYhBPZChR0vjbGA2RDj2lEqa3OJt7k4BYbL8CPuV8+/itOi6YW2M2wtybpB+xQ==
   dependencies:
     crlf-normalize "^1.0.7"
     err-code "^3.0.1"
