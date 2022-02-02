@@ -6,6 +6,7 @@ import { array_unique_overwrite } from 'array-hyper-unique';
 import { getSubErrors } from 'err-errors';
 import { errStackReduceCore } from 'err-stack-reduce';
 import { stringifyStackMeta } from 'err-stack-meta';
+import { parseStack } from 'error-stack2';
 
 function _isAllowedIterable(arr) {
   return typeof arr !== 'string' && !(arr instanceof String) && isIterable(arr);
@@ -70,7 +71,30 @@ function messageWithSubErrors(mainError, errors, options) {
   var _errors;
 
   (_errors = errors) !== null && _errors !== void 0 ? _errors : errors = getSubErrors(mainError);
-  return String(mainError.message) + '\n' + indentSubErrors(errors, options, mainError);
+
+  let _e = parseStack(mainError.stack, mainError.message);
+
+  let lines = [];
+
+  if (typeof _e.message !== 'undefined') {
+    lines.push(_e.message);
+  }
+
+  let _em2 = indentSubErrors(errors, options, mainError);
+
+  if (_em2.length) {
+    if (lines.length === 0) {
+      lines.push('');
+    }
+
+    lines.push(_em2);
+  }
+
+  if (lines.length) {
+    return lines.join('\n');
+  }
+
+  return void 0;
 }
 
 export { _isAllowedIterable, messageWithSubErrors as default, errorsToMessageList, indentSubErrorMessage, indentSubErrors, indentSubErrorsFromError, messageWithSubErrors };

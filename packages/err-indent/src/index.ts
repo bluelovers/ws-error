@@ -6,6 +6,7 @@ import { array_unique_overwrite } from 'array-hyper-unique';
 import { getSubErrors } from 'err-errors';
 import { errStackReduceCore, IOptions as IErrStackReduceOptions } from 'err-stack-reduce';
 import { stringifyStackMeta } from 'err-stack-meta';
+import { parseStack } from 'error-stack2';
 
 export interface IOptions<T = any>
 {
@@ -127,7 +128,32 @@ export function messageWithSubErrors<T, A extends IIterableLike<T> = IIterableLi
 {
 	errors ??= getSubErrors(mainError) as IIterableAllowed<T, A>;
 
-	return String(mainError.message) + '\n' + indentSubErrors(errors, options, mainError);
+	let _e = parseStack(mainError.stack, mainError.message);
+
+	let lines = [] as string[];
+
+	if (typeof _e.message !== 'undefined')
+	{
+		lines.push(_e.message);
+	}
+
+	let _em2 = indentSubErrors(errors, options, mainError);
+
+	if (_em2.length)
+	{
+		if (lines.length === 0)
+		{
+			lines.push('');
+		}
+		lines.push(_em2);
+	}
+
+	if (lines.length)
+	{
+		return lines.join('\n')
+	}
+
+	return void 0;
 }
 
 export default messageWithSubErrors
