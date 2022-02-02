@@ -27,6 +27,8 @@ function _check(mainError: Error, error: Error)
 	expect(actual).toMatchSnapshot({
 		stack: expect.any(String),
 		originalStack: expect.any(String),
+		type: error.name,
+		rawTrace: expect.any(Array),
 	});
 
 	return {
