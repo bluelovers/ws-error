@@ -1,10 +1,6 @@
 {
-  "extends": "@bluelovers/tsconfig/tsdx/index.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "importHelpers": true,
-    "noImplicitAny": false,
-    "lib": [
-      "es2021.promise"
-    ]
+    "importHelpers": false,
   }
 }

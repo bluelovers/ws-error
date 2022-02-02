@@ -1,10 +1,6 @@
 {
-  "extends": "@bluelovers/tsconfig/tsdx/index.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "importHelpers": true,
-    "lib": [
-      "es2019",
-      "es2021"
-    ]
+    "importHelpers": false,
   }
 }
