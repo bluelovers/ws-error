@@ -22,6 +22,8 @@ export declare function errStackReduceCore(mainError: Error, mainOptions?: IOpti
     prefix: string;
     message: string;
     error: Error;
+    rawTrace: string[];
+    type: string;
 };
 /**
  * reduce stame stack from sub error with parent error
@@ -34,5 +36,7 @@ export declare function errStackReduce(error: Error, mainError: Error, mainOptio
     prefix: string;
     message: string;
     error: Error;
+    rawTrace: string[];
+    type: string;
 };
 export default errStackReduceCore;

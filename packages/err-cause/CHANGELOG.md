@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/bluelovers/ws-error/compare/err-cause@1.0.4...err-cause@1.0.5) (2022-02-02)
+
+
+### ✨　Features
+
+* update tsconfig.json ([e87b3dc](https://github.com/bluelovers/ws-error/commit/e87b3dca318070a92d027512121e9d9f8613de01))
+
+
+
+
+
 ## [1.0.4](https://github.com/bluelovers/ws-error/compare/err-cause@1.0.2...err-cause@1.0.4) (2022-02-01)
 
 

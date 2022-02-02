@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/bluelovers/ws-error/compare/err-stack-meta@1.0.7...err-stack-meta@1.0.8) (2022-02-02)
+
+
+### ✨　Features
+
+* update tsconfig.json ([e87b3dc](https://github.com/bluelovers/ws-error/commit/e87b3dca318070a92d027512121e9d9f8613de01))
+* return more ([130dc08](https://github.com/bluelovers/ws-error/commit/130dc0857ceebb9dcd876300db5aec6c5009e9da))
+* support message is `undefined` ([ca01003](https://github.com/bluelovers/ws-error/commit/ca01003e6bf9a0d76e9b8c39560b6d21f78fe065))
+
+
+
+
+
 ## [1.0.7](https://github.com/bluelovers/ws-error/compare/err-stack-meta@1.0.5...err-stack-meta@1.0.7) (2022-02-01)
 
 

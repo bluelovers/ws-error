@@ -6,6 +6,8 @@ Object {
   "message": "",
   "originalStack": Any<String>,
   "prefix": "Error: ",
+  "rawTrace": Any<Array>,
   "stack": Any<String>,
+  "type": "Error",
 }
 `;
