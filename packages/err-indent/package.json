@@ -21,13 +21,15 @@
   },
   "license": "ISC",
   "author": "bluelovers",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.esm.mjs",
       "require": "./dist/index.cjs"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./src/*": "./src/*"
   },
   "main": "dist/index.cjs",
   "unpkg": "dist/index.umd.js",
@@ -72,14 +74,14 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "array-hyper-unique": "^2.0.6",
+    "array-hyper-unique": "^2.0.7",
     "check-iterable": "^1.0.5",
     "clean-stack": "<4 >=3.0.1",
     "err-errors": "^1.0.6",
     "err-stack-meta": "^1.0.9",
     "error-stack2": "^2.0.2",
     "indent-string": "<5 >=4",
-    "tslib": "^2.3.1"
+    "tslib": "^2"
   },
   "packageManager": "yarn@^1.22.11"
 }

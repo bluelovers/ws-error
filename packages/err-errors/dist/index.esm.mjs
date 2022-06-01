@@ -1,7 +1,6 @@
-function getSubErrors(mainError) {
-  var _ref, _mainError$errors, _mainError$Symbol$ite, _mainError$slice;
-
-  return (_ref = (_mainError$errors = mainError.errors) !== null && _mainError$errors !== void 0 ? _mainError$errors : (_mainError$Symbol$ite = mainError[Symbol.iterator]) === null || _mainError$Symbol$ite === void 0 ? void 0 : _mainError$Symbol$ite.call(mainError)) !== null && _ref !== void 0 ? _ref : (_mainError$slice = mainError.slice) === null || _mainError$slice === void 0 ? void 0 : _mainError$slice.call(mainError);
+function getSubErrors(r) {
+  var l, o, u, e;
+  return null !== (l = null !== (o = r.errors) && void 0 !== o ? o : null === (u = r[Symbol.iterator]) || void 0 === u ? void 0 : u.call(r)) && void 0 !== l ? l : null === (e = r.slice) || void 0 === e ? void 0 : e.call(r);
 }
 
 export { getSubErrors as default, getSubErrors };

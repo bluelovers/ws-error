@@ -44,12 +44,12 @@
   },
   "resolutions": {},
   "dependencies": {
-    "tslib": "^2.3.1"
+    "tslib": "^2"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.36",
-    "@bluelovers/tsconfig": "^1.0.28",
-    "@types/jest": "^27.4.0",
+    "@bluelovers/tsconfig": "^1.0.30",
+    "@types/jest": "^27.5.1",
     "@types/node": "*"
   },
   "peerDependencies": {

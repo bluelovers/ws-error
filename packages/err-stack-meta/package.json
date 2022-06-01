@@ -73,8 +73,8 @@
   },
   "dependencies": {
     "error-stack2": "^2.0.2",
-    "ts-type": "^2.1.4",
-    "tslib": "^2.3.1"
+    "ts-type": "^2.1.6",
+    "tslib": "^2"
   },
   "packageManager": "yarn@^1.22.11"
 }

@@ -1,110 +1,69 @@
-import { $AggregateError } from 'aggregate-error-or-core-js';
-import { bases, SymbolBases } from '@bluelovers/extend-bases';
-import { errStackMeta } from 'err-stack-meta';
-import { indentSubErrors, messageWithSubErrors } from 'err-indent';
-import { stringifyErrorStack } from 'error-stack2';
+import { $AggregateError as r } from "aggregate-error-or-core-js";
 
-const SymbolErrStackMeta = /*#__PURE__*/Symbol.for('err-stack-meta');
-const SymbolStackInited = /*#__PURE__*/Symbol.for('stack:inited');
-const SymbolStackChanged = /*#__PURE__*/Symbol.for('stack:changed');
-class AggregateErrorExtra extends bases($AggregateError, Array) {
-  constructor(errors, message) {
-    var _errors;
+import { bases as t, SymbolBases as e } from "@bluelovers/extend-bases";
 
-    (_errors = errors) !== null && _errors !== void 0 ? _errors : errors = [];
-    errors = [...errors].map(e => {
-      if (typeof e === 'string') {
-        return new Error(e);
-      }
+import { errStackMeta as s } from "err-stack-meta";
 
-      return e;
-    });
-    let e = new $AggregateError(errors, message !== null && message !== void 0 ? message : '');
-    super(e, e.errors);
-    e.name = 'AggregateErrorExtra';
-    Error.captureStackTrace(e, AggregateErrorExtra);
+import { indentSubErrors as o, messageWithSubErrors as a } from "err-indent";
+
+import { stringifyErrorStack as i } from "error-stack2";
+
+const g = Symbol.for("err-stack-meta"), h = Symbol.for("stack:inited"), n = Symbol.for("stack:changed");
+
+class AggregateErrorExtra extends(t(r, Array)){
+  constructor(t, e) {
+    var s;
+    null !== (s = t) && void 0 !== s || (t = []), t = [ ...t ].map((r => "string" == typeof r ? new Error(r) : r));
+    let o = new r(t, null != e ? e : "");
+    super(o, o.errors), o.name = "AggregateErrorExtra", Error.captureStackTrace(o, AggregateErrorExtra);
   }
-
   get code() {
-    return this[SymbolBases][0].code;
+    return this[e][0].code;
   }
-
-  set code(code) {
-    this[SymbolBases][0].code = code;
+  set code(r) {
+    this[e][0].code = r;
   }
-
-  set name(value) {
-    this[SymbolBases][0].name = value !== null && value !== void 0 ? value : this[SymbolBases][0].name;
+  set name(r) {
+    this[e][0].name = null != r ? r : this[e][0].name;
   }
-
   get message() {
-    return this[SymbolBases][0].message;
+    return this[e][0].message;
   }
-
-  set message(message) {
-    this[SymbolBases][0].message = message;
-
-    if (this[SymbolStackInited]) {
-      let meta = this.meta();
-      meta.message = String(message !== null && message !== void 0 ? message : '') + '\n' + indentSubErrors(this[SymbolBases][0].errors, {}, this[SymbolBases][0]);
-      this[SymbolStackChanged] = true;
-    }
+  set message(r) {
+    this[e][0].message = r, this[h] && (this.meta().message = String(null != r ? r : "") + "\n" + o(this[e][0].errors, {}, this[e][0]), 
+    this[n] = !0);
   }
-
-  meta(refresh) {
-    if (refresh == true || typeof this[SymbolErrStackMeta] === 'undefined') {
-      this[SymbolErrStackMeta] = errStackMeta(this[SymbolBases][0]);
-      delete this[SymbolErrStackMeta].error;
-    }
-
-    this[SymbolStackInited] = true;
-    return this[SymbolErrStackMeta];
+  meta(r) {
+    return 1 != r && void 0 !== this[g] || (this[g] = s(this[e][0]), delete this[g].error), 
+    this[h] = !0, this[g];
   }
-
   get stack() {
-    let stack = this[SymbolBases][0].stack;
-    let meta = this.meta();
-
-    if (!this[SymbolStackChanged] || this[SymbolStackChanged]) {
-      let message = messageWithSubErrors(this[SymbolBases][0]);
-
-      if (message === '') {
-        message = void 0;
-      }
-
-      stack = stringifyErrorStack({ ...meta,
-        message
-      });
-      this[SymbolBases][0].stack = stack;
-      this[SymbolStackChanged] = false;
+    let r = this[e][0].stack, t = this.meta();
+    if (!this[n] || this[n]) {
+      let s = a(this[e][0]);
+      "" === s && (s = void 0), r = i({
+        ...t,
+        message: s
+      }), this[e][0].stack = r, this[n] = !1;
     }
-
-    return stack;
+    return r;
   }
-
-  set stack(stack) {
-    this[SymbolBases][0].stack = stack;
-    this.meta();
-    this[SymbolStackChanged] = true;
+  set stack(r) {
+    this[e][0].stack = r, this.meta(), this[n] = !0;
   }
-
   get errors() {
-    return this[SymbolBases][0].errors;
+    return this[e][0].errors;
   }
-
-  set errors(errors) {
-    this[SymbolBases][1] = this[SymbolBases][0].errors = [...errors];
+  set errors(r) {
+    this[e][1] = this[e][0].errors = [ ...r ];
   }
-
   toString() {
-    return this[SymbolBases][0].toString.call(this);
+    return this[e][0].toString.call(this);
   }
-
   toLocaleString() {
     return this.toString();
   }
-
 }
 
-export { AggregateErrorExtra, SymbolErrStackMeta, SymbolStackChanged, SymbolStackInited, AggregateErrorExtra as default };
+export { AggregateErrorExtra, g as SymbolErrStackMeta, n as SymbolStackChanged, h as SymbolStackInited, AggregateErrorExtra as default };
 //# sourceMappingURL=index.esm.mjs.map

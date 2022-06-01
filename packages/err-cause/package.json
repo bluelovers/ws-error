@@ -70,7 +70,7 @@
   "devDependencies": {
     "@types/semver": "^7.3.9",
     "is-plain-object": "< 5 >= 4",
-    "semver": "^7.3.5"
+    "semver": "^7.3.7"
   },
   "packageManager": "yarn@^1.22.11"
 }

@@ -1,26 +1,21 @@
-import { parseStack, formatMessagePrefix } from 'error-stack2';
+import { parseStack as e, formatMessagePrefix as r } from "error-stack2";
 
-function errStackMeta(error) {
-  let es = parseStack(error.stack, error.message);
+function errStackMeta(a) {
+  let t = e(a.stack, a.message);
   return {
-    type: es.type,
-    prefix: formatMessagePrefix(es) + ': ',
-    message: es.message,
-    rawTrace: es.rawTrace,
-    stack: es.rawTrace.join('\n'),
-    error
+    type: t.type,
+    prefix: r(t) + ": ",
+    message: t.message,
+    rawTrace: t.rawTrace,
+    stack: t.rawTrace.join("\n"),
+    error: a
   };
 }
-function stringifyStackMeta(meta, stack) {
-  var _stack, _meta$message;
 
-  (_stack = stack) !== null && _stack !== void 0 ? _stack : stack = meta.stack;
-
-  if (stack.length) {
-    stack = `\n${stack}`;
-  }
-
-  return `${meta.prefix}${(_meta$message = meta.message) !== null && _meta$message !== void 0 ? _meta$message : ''}${stack}`;
+function stringifyStackMeta(e, r) {
+  var a, t;
+  return null !== (a = r) && void 0 !== a || (r = e.stack), r.length && (r = `\n${r}`), 
+  `${e.prefix}${null !== (t = e.message) && void 0 !== t ? t : ""}${r}`;
 }
 
 export { errStackMeta as default, errStackMeta, stringifyStackMeta };

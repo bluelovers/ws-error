@@ -1,30 +1,22 @@
-function _isError(error) {
-  return error instanceof Error;
+function _isError(r) {
+  return r instanceof Error;
 }
-function isSupportedErrorCause(sc = Error) {
-  try {
-    const cause = new Error();
-    let err = new sc('', {
-      cause
-    });
-    return err.cause === cause;
-  } catch (e) {}
 
+function isSupportedErrorCause(r = Error) {
+  try {
+    const e = new Error;
+    return new r("", {
+      cause: e
+    }).cause === e;
+  } catch (r) {}
   return null;
 }
-function errCause(error, options) {
-  if (!_isError(error)) {
-    throw new TypeError(`error should instanceof Error: ${error}`);
-  }
 
-  let cause = _isError(options) ? options : options.cause;
-
-  if (!_isError(cause)) {
-    throw new TypeError(`cause should instanceof Error: ${cause}`);
-  }
-
-  error.cause = cause;
-  return error;
+function errCause(r, e) {
+  if (!_isError(r)) throw new TypeError(`error should instanceof Error: ${r}`);
+  let o = _isError(e) ? e : e.cause;
+  if (!_isError(o)) throw new TypeError(`cause should instanceof Error: ${o}`);
+  return r.cause = o, r;
 }
 
 export { _isError, errCause as default, errCause, isSupportedErrorCause };
