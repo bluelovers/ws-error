@@ -1,6 +1,6 @@
 {
   "name": "aggregate-error-or-core-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "use global AggregateError or from core-js-pure",
   "keywords": [
     "err",

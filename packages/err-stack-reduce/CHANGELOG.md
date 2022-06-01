@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.9](https://github.com/bluelovers/ws-error/compare/err-stack-reduce@1.0.8...err-stack-reduce@1.0.9) (2022-06-01)
+
+
+### 🛠　Build System
+
+* update tsdx and deps ([366a035](https://github.com/bluelovers/ws-error/commit/366a03526bb03025b0b253b8bc96b6694fd8b6d6))
+
+
+
+
+
 ## [1.0.8](https://github.com/bluelovers/ws-error/compare/err-stack-reduce@1.0.7...err-stack-reduce@1.0.8) (2022-02-02)
 
 
