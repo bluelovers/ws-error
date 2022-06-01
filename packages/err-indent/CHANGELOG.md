@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.7...err-indent@1.0.8) (2022-06-01)
+
+
+### 🔖　Miscellaneous
+
+* . ([cae8e3a](https://github.com/bluelovers/ws-error/commit/cae8e3ad6e9872ea87156cb8fa4da7ab83229a10))
+
+
+
+
+
 ## [1.0.7](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.6...err-indent@1.0.7) (2022-06-01)
 
 
