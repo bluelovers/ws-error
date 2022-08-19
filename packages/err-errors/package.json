@@ -1,6 +1,6 @@
 {
   "name": "err-errors",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "keywords": [
     "err",
@@ -71,7 +71,7 @@
   "dependencies": {
     "array-hyper-unique": "^2.0.8",
     "check-iterable": "^1.0.5",
-    "err-stack-reduce": "^1.0.9",
+    "err-stack-reduce": "^1.0.10",
     "tslib": "^2"
   },
   "devDependencies": {

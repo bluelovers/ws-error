@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/bluelovers/ws-error/compare/err-cause@1.0.7...err-cause@1.0.8) (2022-08-19)
+
+
+### ♻️　Chores
+
+* update files ([f7f4257](https://github.com/bluelovers/ws-error/commit/f7f425709c7c03e5d62142b74a045647e0c3babd))
+
+
+
+
+
 ## [1.0.7](https://github.com/bluelovers/ws-error/compare/err-cause@1.0.6...err-cause@1.0.7) (2022-06-01)
 
 
