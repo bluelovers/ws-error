@@ -13,8 +13,8 @@ export interface IOptions<T = any> {
     indentOptions?: IIndentOptions;
     stackReduceOptions?: IErrStackReduceOptions;
 }
-export declare type IIterableLike<T = any> = Iterable<T> | IterableIterator<T>;
-export declare type IIterableAllowed<T, A extends IIterableLike<T>> = Exclude<A, string | String>;
+export type IIterableLike<T = any> = Iterable<T> | IterableIterator<T>;
+export type IIterableAllowed<T, A extends IIterableLike<T>> = Exclude<A, string | String>;
 export declare function _isAllowedIterable(arr: any): boolean;
 export declare function errorsToMessageList<T, A extends IIterableLike<T> = IIterableLike<T>>(errors: IIterableAllowed<T, A>, options?: IOptions<T>, mainError?: Error): string[];
 export declare function indentSubErrorMessage(sub_message: string | IIterableLike<string>, options?: IOptions): string;
