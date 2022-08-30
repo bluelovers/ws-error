@@ -81,6 +81,7 @@
     "clean-stack": "<4 >=3.0.1",
     "err-errors": "^1.0.10",
     "err-stack-meta": "^1.0.12",
+    "err-stack-reduce": "^1.0.11",
     "error-stack2": "^2.0.2",
     "indent-string": "<5 >=4"
   },
