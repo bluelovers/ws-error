@@ -285,10 +285,10 @@ core-js-pure@^3.25.0:
   resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.25.0.tgz#f8d1f176ff29abbfeb610110de891d5ae5a361d4"
   integrity sha512-IeHpLwk3uoci37yoI2Laty59+YqH9x5uR65/yiA0ARAJrTrN4YU0rmauLWfvqOuk77SlNJXj2rM6oT/dBD87+A==
 
-crlf-normalize@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/crlf-normalize/-/crlf-normalize-1.0.7.tgz#84044949d93b708b3623abd4661fe8173c3e543c"
-  integrity sha512-USifFsvW0fI8BuHpR0zqHjr2uQdbQ5awWmk0UbWF/Y3jScR+6gFqukzfavi2FzrjQ65ihSMPNGx07K6CPno8sQ==
+crlf-normalize@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/crlf-normalize/-/crlf-normalize-1.0.12.tgz#e08da54e3cc44fd7940292a53e6b3edc8af97ec2"
+  integrity sha512-Cv7LWniq9FtXdfjfCeLdOO3VbyFEFKfPSuRv0mBxS+rRUnQsh7YqWWB07ol0FwuuwJqaTp30tavkN9T/mBAWag==
   dependencies:
     ts-type "^2.1.4"
 
@@ -317,16 +317,15 @@ err-code@^3.0.1:
   resolved "https://registry.npmjs.org/err-code/-/err-code-3.0.1.tgz#a444c7b992705f2b120ee320b09972eef331c920"
   integrity sha512-GiaH0KJUewYok+eeY05IIgjtAe4Yltygk9Wqp1V5yVWLdhf0hYZchRjNIT9bb0mSwRcIusT3cx7PJUf3zEIfUA==
 
-error-stack2@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-2.0.2.tgz#3d1860ea7aee25d895802b8db7fbe8fc11af62c3"
-  integrity sha512-wgATLyzVLbV6uOyuNzPjL9/BXYhBPZChR0vjbGA2RDj2lEqa3OJt7k4BYbL8CPuV8+/itOi6YW2M2wtybpB+xQ==
+error-stack2@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/error-stack2/-/error-stack2-2.0.3.tgz#5e7a8dc0ca8a288e6000f3387b4309d16b1af6af"
+  integrity sha512-AGH4Inj0IvUFadttl/AfLtXIaBWake9di+B46P1km5Qs5R/P8oFTH3FxJkKDkp7OHLWTTLu1sEXhOL78ii8Rsw==
   dependencies:
-    crlf-normalize "^1.0.7"
+    crlf-normalize "^1.0.12"
     err-code "^3.0.1"
-    string-split-keep2 "^1.0.2"
-    ts-type "^2.1.4"
-    tslib "^2.3.1"
+    string-split-keep2 "^1.0.7"
+    ts-type ">=2"
 
 es-abstract@^1.19.0, es-abstract@^1.19.1, es-abstract@^1.19.2, es-abstract@^1.19.5:
   version "1.20.1"
@@ -875,10 +874,10 @@ stack-utils@^2.0.3:
   dependencies:
     escape-string-regexp "^2.0.0"
 
-string-split-keep2@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/string-split-keep2/-/string-split-keep2-1.0.2.tgz#db255a44f6d11e95004ebc0cf47b8fc8412076fa"
-  integrity sha512-/c6O1DASLhPV/fX17fiilLhRf2KmhVV+/tWOQczVt/9SQMBlio/1VsCcVWpjhRxIFuLc+P21zHWjQYZ8CsACTw==
+string-split-keep2@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/string-split-keep2/-/string-split-keep2-1.0.7.tgz#a5915b27ac6fe494efd879bdd51456b7766fe7b0"
+  integrity sha512-pfBw0yUrXLQQP9qXc2ci3/eojWI1jIO87nHGJA362VgK9Ge0vdfNLbyIXnpav5IVssHelTDVlbKN8HcQNZ5tAw==
 
 string.prototype.trimend@^1.0.5:
   version "1.0.5"
