@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.11](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.10...err-indent@1.0.11) (2022-08-30)
+
+
+
+### 🐛　Bug Fixes
+
+* **deps:** miss `err-stack-reduce` ([35d841a](https://github.com/bluelovers/ws-error/commit/35d841adc065cd18510461c3bc019231100a541c))
+
+
+
 ## [1.0.10](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.9...err-indent@1.0.10) (2022-08-30)
 
 

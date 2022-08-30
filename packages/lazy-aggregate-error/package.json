@@ -1,6 +1,6 @@
 {
   "name": "lazy-aggregate-error",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "keywords": [
     "err",
@@ -77,7 +77,7 @@
   "dependencies": {
     "@bluelovers/extend-bases": "^2.0.1",
     "aggregate-error-or-core-js": "^1.0.7",
-    "err-indent": "^1.0.10",
+    "err-indent": "^1.0.11",
     "err-stack-meta": "^1.0.12",
     "error-stack2": "^2.0.2"
   },
