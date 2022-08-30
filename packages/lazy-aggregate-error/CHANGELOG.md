@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.13](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.12...lazy-aggregate-error@1.0.13) (2022-08-30)
+
+
+
+### 🚨　Tests
+
+* **snapshot:** update snapshot ([fb38cea](https://github.com/bluelovers/ws-error/commit/fb38cea1abe983d3cca149a6f45ccceff6bc1a67))
+
+
+### 📌　Dependencies
+
+* update deps ([21feba2](https://github.com/bluelovers/ws-error/commit/21feba2940aae29023fac2ab5836cac1e2a21940))
+
+
+
 ## [1.0.12](https://github.com/bluelovers/ws-error/compare/lazy-aggregate-error@1.0.11...lazy-aggregate-error@1.0.12) (2022-08-19)
 
 
