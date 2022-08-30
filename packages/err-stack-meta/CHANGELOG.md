@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.13](https://github.com/bluelovers/ws-error/compare/err-stack-meta@1.0.12...err-stack-meta@1.0.13) (2022-08-30)
+
+
+
+### 📌　Dependencies
+
+* update deps ([fbf9953](https://github.com/bluelovers/ws-error/commit/fbf9953f962c75515ecf255e356a6f7050fe7134))
+
+
+
 ## [1.0.12](https://github.com/bluelovers/ws-error/compare/err-stack-meta@1.0.11...err-stack-meta@1.0.12) (2022-08-30)
 
 
