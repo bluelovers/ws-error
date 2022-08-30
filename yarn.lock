@@ -23,10 +23,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@bluelovers/extend-bases@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/@bluelovers/extend-bases/-/extend-bases-2.0.1.tgz#508a803c76317c6e7a82ebcf3d3adeb4c629a765"
-  integrity sha512-bbDzpIPELaJXAhs5YKFYIkGPV9UdnrO6qXJFwdz7F3cpG7+3Pz8bZ9DMhiHNS8DlYzq9nra/e0qoXeU/SJ5MTw==
+"@bluelovers/extend-bases@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@bluelovers/extend-bases/-/extend-bases-2.0.2.tgz#7df57c523c3a216007a794a8da9155f19e68a74f"
+  integrity sha512-QbZ14A4VsmumNHgyi8GcoV30CcCSNzzjrEFnOxIyZkYZwp5TOY7cgt4NFO2Moq0XJNbZMyBMKK8ozkle5UpM1g==
   dependencies:
     array.prototype.flatmap "^1.3.0"
     class-without-call-parent-constructor "^2.0.5"
