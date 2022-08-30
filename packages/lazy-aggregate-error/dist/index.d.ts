@@ -6,7 +6,7 @@ export { SymbolErrStackMeta, SymbolStackInited, SymbolStackChanged };
 export interface AggregateErrorExtra<T = Error> extends Omit<Array<T>, number | keyof AggregateError | 'toLocaleString'> {
     [k: number]: T;
 }
-declare const AggregateErrorExtra_base: new (...baseInstances: import("@bluelovers/extend-bases").InstancesArray<[AggregateErrorConstructor, ArrayConstructor]>) => import("@bluelovers/extend-bases").HasBases<[AggregateErrorConstructor, ArrayConstructor]>;
+declare const AggregateErrorExtra_base: new (...baseInstances: import("@bluelovers/extend-bases").IInstancesArray<[AggregateErrorConstructor, ArrayConstructor]>) => import("@bluelovers/extend-bases").IHasBases<[AggregateErrorConstructor, ArrayConstructor]>;
 export declare class AggregateErrorExtra<T = Error> extends AggregateErrorExtra_base {
     [SymbolErrStackMeta]: IErrStackMeta<this>;
     [SymbolStackInited]: boolean;

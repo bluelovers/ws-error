@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lazy.spec.ts test 1`] = `
-Object {
+{
   "error": [Error],
   "message": "",
   "originalStack": Any<String>,

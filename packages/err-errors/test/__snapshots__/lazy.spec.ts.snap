@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lazy.spec.ts AggregateErrorExtra 1`] = `
-Array [
+[
   [Error: 1],
   [Error: 3],
 ]
 `;
 
 exports[`lazy.spec.ts AggregateErrorExtra 2`] = `
-Array [
+[
   [Error: 1],
   [Error: 3],
 ]
 `;
 
 exports[`lazy.spec.ts Bluebird.AggregateError 1`] = `
-Array [
+[
   [Error: 1],
   [Error: 3],
 ]
 `;
 
 exports[`lazy.spec.ts es.AggregateError 1`] = `
-Array [
+[
   [Error: 1],
   [Error: 3],
 ]

@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/bluelovers/ws-error/compare/aggregate-error-or-core-js@1.0.5...aggregate-error-or-core-js@1.0.6) (2022-08-30)
+
+
+
+### 📌　Dependencies
+
+* update deps ([21feba2](https://github.com/bluelovers/ws-error/commit/21feba2940aae29023fac2ab5836cac1e2a21940))
+
+
+
 ## [1.0.5](https://github.com/bluelovers/ws-error/compare/aggregate-error-or-core-js@1.0.4...aggregate-error-or-core-js@1.0.5) (2022-08-19)
 
 

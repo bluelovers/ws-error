@@ -4,6 +4,9 @@
  * - {@link Bluebird.AggregateError}
  */
 export declare function getSubErrors<T>(mainError: Error): Iterable<T>;
-export default getSubErrors;
+
+export {
+	getSubErrors as default,
+};
 
 export {};

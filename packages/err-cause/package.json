@@ -1,6 +1,6 @@
 {
   "name": "err-cause",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "keywords": [
     "err",
@@ -74,6 +74,5 @@
     "sort-package-json": "yarn-tool sort",
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
-  "devDependencies": {},
   "packageManager": "yarn@^1.22.11"
 }
