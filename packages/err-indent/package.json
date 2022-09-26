@@ -17,7 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluelovers/ws-error.git"
+    "url": "git+https://github.com/bluelovers/ws-error.git",
+    "directory": "packages/err-indent"
   },
   "license": "ISC",
   "author": "bluelovers",
@@ -76,13 +77,13 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "array-hyper-unique": "^2.0.8",
+    "array-hyper-unique": "^2.1.1",
     "check-iterable": "^1.0.5",
     "clean-stack": "<4 >=3.0.1",
     "err-errors": "^1.0.10",
     "err-stack-meta": "^1.0.13",
     "err-stack-reduce": "^1.0.12",
-    "error-stack2": "^2.0.3",
+    "error-stack2": "^2.0.4",
     "indent-string": "<5 >=4"
   },
   "packageManager": "yarn@^1.22.11"

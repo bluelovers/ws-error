@@ -76,8 +76,8 @@
   },
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.30",
-    "@types/bluebird": "^3.5.36",
-    "@types/jest": "^29.0.0",
+    "@types/bluebird": "^3.5.37",
+    "@types/jest": "^29.0.3",
     "@types/node": "*",
     "@types/semver": "^7.3.12",
     "@yarn-tool/ws-find-up-paths": "*"

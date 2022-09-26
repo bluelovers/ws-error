@@ -17,7 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluelovers/ws-error.git"
+    "url": "git+https://github.com/bluelovers/ws-error.git",
+    "directory": "packages/err-cause"
   },
   "license": "ISC",
   "author": "bluelovers",

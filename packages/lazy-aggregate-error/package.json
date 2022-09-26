@@ -17,7 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluelovers/ws-error.git"
+    "url": "git+https://github.com/bluelovers/ws-error.git",
+    "directory": "packages/lazy-aggregate-error"
   },
   "license": "ISC",
   "author": "bluelovers",
@@ -79,7 +80,7 @@
     "aggregate-error-or-core-js": "^1.0.7",
     "err-indent": "^1.0.12",
     "err-stack-meta": "^1.0.13",
-    "error-stack2": "^2.0.3"
+    "error-stack2": "^2.0.4"
   },
   "packageManager": "yarn@^1.22.11"
 }

@@ -17,7 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluelovers/ws-error.git"
+    "url": "git+https://github.com/bluelovers/ws-error.git",
+    "directory": "packages/err-stack-meta"
   },
   "license": "ISC",
   "author": "bluelovers",
@@ -76,7 +77,7 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "error-stack2": "^2.0.3",
+    "error-stack2": "^2.0.4",
     "ts-type": ">=2"
   },
   "packageManager": "yarn@^1.22.11"
