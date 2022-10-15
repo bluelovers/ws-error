@@ -1,2 +1,60 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var r=require("indent-string"),e=require("clean-stack"),t=require("util"),s=require("check-iterable"),n=require("array-hyper-unique"),i=require("err-errors"),o=require("err-stack-reduce"),u=require("err-stack-meta"),a=require("error-stack2");function _interopDefaultLegacy(r){return r&&"object"==typeof r&&"default"in r?r:{default:r}}var l=_interopDefaultLegacy(r),d=_interopDefaultLegacy(e);function _isAllowedIterable(r){return"string"!=typeof r&&!(r instanceof String)&&s.isIterable(r)}function errorsToMessageList(r,e,s){var i,a,l;if(!r||!_isAllowedIterable(r))throw new TypeError(`Invalid input errors: ${r}`);null!==(i=e)&&void 0!==i||(e={});const{handleStack:c=(r=>d.default(r))}=e;let g;null!==(a=s)&&void 0!==a||(s=e.error);let b=[];const f=o.errStackReduceCore(s,e.stackReduceOptions);return r.forEach((r=>{null!=r&&(s===r?g=String(r):b.push("string"==typeof r.stack?c(u.stringifyStackMeta(f(r)),r):t.inspect(r)))})),b=b.filter((r=>null==r?void 0:r.length)),null!==(l=g)&&void 0!==l&&l.length&&b.unshift(g),n.array_unique_overwrite(b)}function indentSubErrorMessage(r,e){var t,s;return _isAllowedIterable(r)&&(r=[...r].join("\n")),null!==(t=e)&&void 0!==t||(e={}),l.default(r,null!==(s=e.indent)&&void 0!==s?s:4,e.indentOptions)}function indentSubErrors(r,e,t){return indentSubErrorMessage(errorsToMessageList(r,e,t),e)}function messageWithSubErrors(r,e,t){var s;null!==(s=e)&&void 0!==s||(e=i.getSubErrors(r));let n=a.parseStack(r.stack,r.message),o=[];void 0!==n.message&&o.push(n.message);let u=indentSubErrors(e,t,r);if(u.length&&(0===o.length&&o.push(""),o.push(u)),o.length)return o.join("\n")}exports._isAllowedIterable=_isAllowedIterable,exports.default=messageWithSubErrors,exports.errorsToMessageList=errorsToMessageList,exports.indentSubErrorMessage=indentSubErrorMessage,exports.indentSubErrors=indentSubErrors,exports.indentSubErrorsFromError=function indentSubErrorsFromError(r,e){return indentSubErrors(i.getSubErrors(r),e,r)},exports.messageWithSubErrors=messageWithSubErrors;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: !0
+});
+
+var r = require("indent-string"), e = require("clean-stack"), t = require("util"), s = require("check-iterable"), n = require("array-hyper-unique"), i = require("err-errors"), o = require("err-stack-reduce"), u = require("err-stack-meta"), a = require("error-stack2");
+
+function _interopDefaultLegacy(r) {
+  return r && "object" == typeof r && "default" in r ? r : {
+    default: r
+  };
+}
+
+var l = _interopDefaultLegacy(r), d = _interopDefaultLegacy(e);
+
+function _isAllowedIterable(r) {
+  return "string" != typeof r && !(r instanceof String) && s.isIterable(r);
+}
+
+function errorsToMessageList(r, e, s) {
+  var i, a, l;
+  if (!r || !_isAllowedIterable(r)) throw new TypeError(`Invalid input errors: ${r}`);
+  null !== (i = e) && void 0 !== i || (e = {});
+  const {handleStack: c = (r => d.default(r))} = e;
+  let g;
+  null !== (a = s) && void 0 !== a || (s = e.error);
+  let b = [];
+  const f = o.errStackReduceCore(s, e.stackReduceOptions);
+  return r.forEach((r => {
+    null != r && (s === r ? g = String(r) : b.push("string" == typeof r.stack ? c(u.stringifyStackMeta(f(r)), r) : t.inspect(r)));
+  })), b = b.filter((r => null == r ? void 0 : r.length)), null !== (l = g) && void 0 !== l && l.length && b.unshift(g), 
+  n.array_unique_overwrite(b);
+}
+
+function indentSubErrorMessage(r, e) {
+  var t, s;
+  return _isAllowedIterable(r) && (r = [ ...r ].join("\n")), null !== (t = e) && void 0 !== t || (e = {}), 
+  l.default(r, null !== (s = e.indent) && void 0 !== s ? s : 4, e.indentOptions);
+}
+
+function indentSubErrors(r, e, t) {
+  return indentSubErrorMessage(errorsToMessageList(r, e, t), e);
+}
+
+function messageWithSubErrors(r, e, t) {
+  var s;
+  null !== (s = e) && void 0 !== s || (e = i.getSubErrors(r));
+  let n = a.parseStack(r.stack, r.message), o = [];
+  void 0 !== n.message && o.push(n.message);
+  let u = indentSubErrors(e, t, r);
+  if (u.length && (0 === o.length && o.push(""), o.push(u)), o.length) return o.join("\n");
+}
+
+exports._isAllowedIterable = _isAllowedIterable, exports.default = messageWithSubErrors, 
+exports.errorsToMessageList = errorsToMessageList, exports.indentSubErrorMessage = indentSubErrorMessage, 
+exports.indentSubErrors = indentSubErrors, exports.indentSubErrorsFromError = function indentSubErrorsFromError(r, e) {
+  return indentSubErrors(i.getSubErrors(r), e, r);
+}, exports.messageWithSubErrors = messageWithSubErrors;
 //# sourceMappingURL=index.cjs.production.min.cjs.map
