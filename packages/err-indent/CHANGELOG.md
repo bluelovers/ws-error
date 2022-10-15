@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.14...err-indent@1.0.15) (2022-10-15)
+
+
+
+### 🛠　Build System
+
+* update build ([2b1130d](https://github.com/bluelovers/ws-error/commit/2b1130d54182da9e74c7e7eb71b76a2a5731d314))
+
+
+### 📌　Dependencies
+
+* update deps ([b567277](https://github.com/bluelovers/ws-error/commit/b567277663a0dff9a1019c24e6aa04aa8b910dbb))
+
+
+
 ## [1.0.14](https://github.com/bluelovers/ws-error/compare/err-indent@1.0.13...err-indent@1.0.14) (2022-09-26)
 
 
