@@ -71,13 +71,13 @@
   "resolutions": {},
   "dependencies": {
     "is-plain-object": "<5 >=4",
-    "semver": "^7.3.7",
+    "semver": "^7.3.8",
     "tslib": ">=2"
   },
   "devDependencies": {
-    "@bluelovers/tsconfig": "^1.0.30",
+    "@bluelovers/tsconfig": "^1.0.31",
     "@types/bluebird": "^3.5.37",
-    "@types/jest": "^29.0.3",
+    "@types/jest": "^29.1.2",
     "@types/node": "*",
     "@types/semver": "^7.3.12",
     "@yarn-tool/ws-find-up-paths": "*"
