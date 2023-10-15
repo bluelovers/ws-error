@@ -6,21 +6,28 @@ function _isError(r) {
 
 function errCause(r, e) {
   if (!_isError(r)) throw new TypeError(`error should instanceof Error: ${r}`);
-  let o = _isError(e) ? e : e.cause;
-  if (!_isError(o)) throw new TypeError(`cause should instanceof Error: ${o}`);
-  return r.cause = o, r;
+  let u = _isError(e) ? e : e.cause;
+  if (!_isError(u)) throw new TypeError(`cause should instanceof Error: ${u}`);
+  return r.cause = u, r;
 }
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(errCause, "__esModule", {
   value: !0
-}), exports._isError = _isError, exports.default = errCause, exports.errCause = errCause, 
-exports.isSupportedErrorCause = function isSupportedErrorCause(r = Error) {
-  try {
-    const e = new Error;
-    return new r("", {
-      cause: e
-    }).cause === e;
-  } catch (r) {}
-  return null;
-};
+}), Object.defineProperty(errCause, "errCause", {
+  value: errCause
+}), Object.defineProperty(errCause, "default", {
+  value: errCause
+}), Object.defineProperty(errCause, "_isError", {
+  value: _isError
+}), Object.defineProperty(errCause, "isSupportedErrorCause", {
+  value: function isSupportedErrorCause(r = Error) {
+    try {
+      const e = new Error;
+      return new r("", {
+        cause: e
+      }).cause === e;
+    } catch (r) {}
+    return null;
+  }
+}), module.exports = errCause;
 //# sourceMappingURL=index.cjs.production.min.cjs.map

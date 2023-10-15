@@ -52,3 +52,15 @@ export function errCause<E extends Error, C extends Error>(error: E, options: C 
 }
 
 export default errCause
+
+// @ts-ignore
+if (process.env.TSDX_FORMAT !== 'esm')
+{
+	Object.defineProperty(errCause, "__esModule", { value: true });
+
+	Object.defineProperty(errCause, 'errCause', { value: errCause });
+	Object.defineProperty(errCause, 'default', { value: errCause });
+
+	Object.defineProperty(errCause, '_isError', { value: _isError });
+	Object.defineProperty(errCause, 'isSupportedErrorCause', { value: isSupportedErrorCause });
+}
