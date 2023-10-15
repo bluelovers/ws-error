@@ -35,10 +35,10 @@ node_modules
 /bin/**/*.d.cts
 /bin/*.d.cts
 
-!./src/**/*.ts
-!./src/**/*.cts
-!./src/**/*.mts
-!./src/**/*.tsx
+!/src/**/*.ts
+!/src/**/*.cts
+!/src/**/*.mts
+!/src/**/*.tsx
 
 /src/**/*.d.ts
 /src/**/*.js
@@ -90,6 +90,7 @@ tsconfig.esm.json.tpl
 .mocharc.yml
 jest.config.js
 jest.config.*
+/jest-preset.*
 /report.*.json
 now.json
 /Makefile
@@ -107,6 +108,21 @@ now.json
 
 *.spec.d.tsx
 *.spec.tsx
+
+*.test.d.ts
+*.test.js
+*.test.ts
+
+*.test.d.cts
+*.test.cjs
+*.test.cts
+
+*.test.d.mts
+*.test.mjs
+*.test.mts
+
+*.test.d.tsx
+*.test.tsx
 
 __mocks__
 __tests__
@@ -135,3 +151,15 @@ bin/tsconfig.json
 bin/tsconfig.*.json
 
 .yarnrc.yml
+.turbo
+__file_snapshots__
+__fixtures__
+/fixture/
+
+/global.tsdx.d.ts
+/next-env.d.ts
+
+*.stories.*
+./stories/
+./global.tsdx.d.ts
+./global.d.ts
