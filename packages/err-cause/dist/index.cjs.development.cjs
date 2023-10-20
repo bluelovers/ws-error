@@ -6,9 +6,11 @@ function _isError(error) {
 function isSupportedErrorCause(sc = Error) {
   try {
     const cause = new Error();
+    // @ts-ignore
     let err = new sc('', {
       cause
     });
+    // @ts-ignore
     return err.cause === cause;
   } catch (e) {}
   return null;
@@ -21,9 +23,11 @@ function errCause(error, options) {
   if (!_isError(cause)) {
     throw new TypeError(`cause should instanceof Error: ${cause}`);
   }
+  // @ts-ignore
   error.cause = cause;
   return error;
 }
+// @ts-ignore
 {
   Object.defineProperty(errCause, "__esModule", {
     value: true

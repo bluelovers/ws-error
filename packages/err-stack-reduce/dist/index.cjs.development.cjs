@@ -1,9 +1,15 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var errStackMeta = require('err-stack-meta');
 
+/**
+ * reduce stame stack from sub error with parent error
+ *
+ * @example
+ * const stackReduce = errStackReduceCore(mainError, options.stackReduceOptions);
+ *
+ * console.dir(stackReduce(error));
+ */
 function errStackReduceCore(mainError, mainOptions) {
   const stack = errStackMeta.errStackMeta(mainError).stack;
   const {
@@ -31,11 +37,30 @@ function errStackReduceCore(mainError, mainOptions) {
     };
   };
 }
+/**
+ * reduce stame stack from sub error with parent error
+ *
+ * recommend use {@link errStackReduceCore}
+ */
 function errStackReduce(error, mainError, mainOptions) {
   return errStackReduceCore(mainError, mainOptions)(error);
 }
+// @ts-ignore
+{
+  Object.defineProperty(errStackReduceCore, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(errStackReduceCore, 'errStackReduceCore', {
+    value: errStackReduceCore
+  });
+  Object.defineProperty(errStackReduceCore, 'default', {
+    value: errStackReduceCore
+  });
+  Object.defineProperty(errStackReduceCore, 'errStackReduce', {
+    value: errStackReduce
+  });
+}
 
-exports["default"] = errStackReduceCore;
-exports.errStackReduce = errStackReduce;
-exports.errStackReduceCore = errStackReduceCore;
+// @ts-ignore
+module.exports = errStackReduceCore;
 //# sourceMappingURL=index.cjs.development.cjs.map

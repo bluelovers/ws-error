@@ -85,7 +85,7 @@
     "err-errors": "^1.0.12",
     "err-stack-meta": "^1.0.15",
     "err-stack-reduce": "^1.0.14",
-    "error-stack2": "^2.0.4",
+    "error-stack2": "^2.0.5",
     "indent-string": "<5 >=4"
   },
   "packageManager": "yarn@^1.22.11"

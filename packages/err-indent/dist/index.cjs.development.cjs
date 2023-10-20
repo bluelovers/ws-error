@@ -12,11 +12,6 @@ var errStackReduce = require('err-stack-reduce');
 var errStackMeta = require('err-stack-meta');
 var errorStack2 = require('error-stack2');
 
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var indentString__default = /*#__PURE__*/_interopDefaultLegacy(indentString);
-var _cleanStack__default = /*#__PURE__*/_interopDefaultLegacy(_cleanStack);
-
 function _isAllowedIterable(arr) {
   return typeof arr !== 'string' && !(arr instanceof String) && checkIterable.isIterable(arr);
 }
@@ -27,7 +22,7 @@ function errorsToMessageList(errors, options, mainError) {
   }
   (_options = options) !== null && _options !== void 0 ? _options : options = {};
   const {
-    handleStack = stack => _cleanStack__default["default"](stack)
+    handleStack = stack => _cleanStack(stack)
   } = options;
   (_mainError = mainError) !== null && _mainError !== void 0 ? _mainError : mainError = options.error;
   let _main;
@@ -57,7 +52,7 @@ function indentSubErrorMessage(sub_message, options) {
     sub_message = [...sub_message].join('\n');
   }
   (_options2 = options) !== null && _options2 !== void 0 ? _options2 : options = {};
-  return indentString__default["default"](sub_message, (_options$indent = options.indent) !== null && _options$indent !== void 0 ? _options$indent : 4, options.indentOptions);
+  return indentString(sub_message, (_options$indent = options.indent) !== null && _options$indent !== void 0 ? _options$indent : 4, options.indentOptions);
 }
 function indentSubErrors(errors, options, mainError) {
   const sub_message = errorsToMessageList(errors, options, mainError);
@@ -89,7 +84,7 @@ function messageWithSubErrors(mainError, errors, options) {
 }
 
 exports._isAllowedIterable = _isAllowedIterable;
-exports["default"] = messageWithSubErrors;
+exports.default = messageWithSubErrors;
 exports.errorsToMessageList = errorsToMessageList;
 exports.indentSubErrorMessage = indentSubErrorMessage;
 exports.indentSubErrors = indentSubErrors;

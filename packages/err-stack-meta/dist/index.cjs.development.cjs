@@ -24,7 +24,7 @@ function stringifyStackMeta(meta, stack) {
   return `${meta.prefix}${(_meta$message = meta.message) !== null && _meta$message !== void 0 ? _meta$message : ''}${stack}`;
 }
 
-exports["default"] = errStackMeta;
+exports.default = errStackMeta;
 exports.errStackMeta = errStackMeta;
 exports.stringifyStackMeta = stringifyStackMeta;
 //# sourceMappingURL=index.cjs.development.cjs.map

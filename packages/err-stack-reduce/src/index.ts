@@ -64,3 +64,14 @@ export function errStackReduce(error: Error, mainError: Error, mainOptions?: IOp
 }
 
 export default errStackReduceCore
+
+// @ts-ignore
+if (process.env.TSDX_FORMAT !== 'esm')
+{
+	Object.defineProperty(errStackReduceCore, "__esModule", { value: true });
+
+	Object.defineProperty(errStackReduceCore, 'errStackReduceCore', { value: errStackReduceCore });
+	Object.defineProperty(errStackReduceCore, 'default', { value: errStackReduceCore });
+
+	Object.defineProperty(errStackReduceCore, 'errStackReduce', { value: errStackReduce });
+}

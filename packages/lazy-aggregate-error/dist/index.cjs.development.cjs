@@ -11,6 +11,7 @@ var errorStack2 = require('error-stack2');
 const SymbolErrStackMeta = /*#__PURE__*/Symbol.for('err-stack-meta');
 const SymbolStackInited = /*#__PURE__*/Symbol.for('stack:inited');
 const SymbolStackChanged = /*#__PURE__*/Symbol.for('stack:changed');
+// @ts-ignore
 class AggregateErrorExtra extends extendBases.bases(aggregateErrorOrCoreJs.$AggregateError, Array) {
   constructor(errors, message) {
     var _errors;
@@ -27,6 +28,7 @@ class AggregateErrorExtra extends extendBases.bases(aggregateErrorOrCoreJs.$Aggr
     Error.captureStackTrace(e, AggregateErrorExtra);
   }
   get code() {
+    // @ts-ignore
     return this[extendBases.SymbolBases][0].code;
   }
   set code(code) {
@@ -85,6 +87,9 @@ class AggregateErrorExtra extends extendBases.bases(aggregateErrorOrCoreJs.$Aggr
   toString() {
     return this[extendBases.SymbolBases][0].toString.call(this);
   }
+  /**
+   * @private
+   */
   toLocaleString() {
     return this.toString();
   }
@@ -94,5 +99,5 @@ exports.AggregateErrorExtra = AggregateErrorExtra;
 exports.SymbolErrStackMeta = SymbolErrStackMeta;
 exports.SymbolStackChanged = SymbolStackChanged;
 exports.SymbolStackInited = SymbolStackInited;
-exports["default"] = AggregateErrorExtra;
+exports.default = AggregateErrorExtra;
 //# sourceMappingURL=index.cjs.development.cjs.map

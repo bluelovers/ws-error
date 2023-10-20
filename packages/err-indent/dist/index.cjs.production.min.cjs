@@ -6,37 +6,29 @@ Object.defineProperty(exports, "__esModule", {
 
 var r = require("indent-string"), e = require("clean-stack"), t = require("util"), s = require("check-iterable"), n = require("array-hyper-unique"), i = require("err-errors"), o = require("err-stack-reduce"), u = require("err-stack-meta"), a = require("error-stack2");
 
-function _interopDefaultLegacy(r) {
-  return r && "object" == typeof r && "default" in r ? r : {
-    default: r
-  };
-}
-
-var l = _interopDefaultLegacy(r), d = _interopDefaultLegacy(e);
-
 function _isAllowedIterable(r) {
   return "string" != typeof r && !(r instanceof String) && s.isIterable(r);
 }
 
-function errorsToMessageList(r, e, s) {
-  var i, a, l;
+function errorsToMessageList(r, s, i) {
+  var a, l, d;
   if (!r || !_isAllowedIterable(r)) throw new TypeError(`Invalid input errors: ${r}`);
-  null !== (i = e) && void 0 !== i || (e = {});
-  const {handleStack: c = (r => d.default(r))} = e;
+  null !== (a = s) && void 0 !== a || (s = {});
+  const {handleStack: c = (r => e(r))} = s;
   let g;
-  null !== (a = s) && void 0 !== a || (s = e.error);
+  null !== (l = i) && void 0 !== l || (i = s.error);
   let b = [];
-  const f = o.errStackReduceCore(s, e.stackReduceOptions);
+  const S = o.errStackReduceCore(i, s.stackReduceOptions);
   return r.forEach((r => {
-    null != r && (s === r ? g = String(r) : b.push("string" == typeof r.stack ? c(u.stringifyStackMeta(f(r)), r) : t.inspect(r)));
-  })), b = b.filter((r => null == r ? void 0 : r.length)), null !== (l = g) && void 0 !== l && l.length && b.unshift(g), 
+    null != r && (i === r ? g = String(r) : b.push("string" == typeof r.stack ? c(u.stringifyStackMeta(S(r)), r) : t.inspect(r)));
+  })), b = b.filter((r => null == r ? void 0 : r.length)), null !== (d = g) && void 0 !== d && d.length && b.unshift(g), 
   n.array_unique_overwrite(b);
 }
 
-function indentSubErrorMessage(r, e) {
-  var t, s;
-  return _isAllowedIterable(r) && (r = [ ...r ].join("\n")), null !== (t = e) && void 0 !== t || (e = {}), 
-  l.default(r, null !== (s = e.indent) && void 0 !== s ? s : 4, e.indentOptions);
+function indentSubErrorMessage(e, t) {
+  var s, n;
+  return _isAllowedIterable(e) && (e = [ ...e ].join("\n")), null !== (s = t) && void 0 !== s || (t = {}), 
+  r(e, null !== (n = t.indent) && void 0 !== n ? n : 4, t.indentOptions);
 }
 
 function indentSubErrors(r, e, t) {
