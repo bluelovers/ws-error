@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/bluelovers/ws-error/compare/err-cause@1.0.12...err-cause@1.1.2) (2023-10-20)
+
+
+### BREAKING CHANGES
+
+* update build
+
+
+
+### 🛠　Build System
+
+* update build ([e8bfc4f](https://github.com/bluelovers/ws-error/commit/e8bfc4fa6d4b1eec4ea30571a3029d79e4af852f))
+
+
+### 📌　Dependencies
+
+* update deps ([1abe7cf](https://github.com/bluelovers/ws-error/commit/1abe7cfaf3a6d073805f1cf7b7247638640e23a0))
+
+
+### 🔖　Miscellaneous
+
+* . ([05a7b5a](https://github.com/bluelovers/ws-error/commit/05a7b5af1e5de8f6b1a1e7e4a126f5d8e89b4741))
+* . ([6c915b3](https://github.com/bluelovers/ws-error/commit/6c915b3028fe9fd00acd83c5e5342a03a2e2f64f))
+
+
+
 ## [1.1.1](https://github.com/bluelovers/ws-error/compare/err-cause@1.0.12...err-cause@1.1.1) (2023-10-20)
 
 
