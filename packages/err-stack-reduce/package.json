@@ -1,6 +1,6 @@
 {
   "name": "err-stack-reduce",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "keywords": [
     "err",
@@ -79,7 +79,7 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "err-stack-meta": "^1.0.17"
+    "err-stack-meta": "^1.0.18"
   },
   "packageManager": "yarn@^1.22.11"
 }
