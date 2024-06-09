@@ -81,20 +81,20 @@
   "resolutions": {},
   "dependencies": {
     "is-plain-object": "<5 >=4.1.1",
-    "semver": "^7.5.4",
+    "semver": "^7.6.2",
     "tslib": ">=2.6.2"
   },
   "devDependencies": {
-    "@bluelovers/tsconfig": "^1.0.34",
-    "@types/bluebird": "^3.5.41",
-    "@types/jest": "^29.5.6",
-    "@types/node": "^20.8.7",
-    "@types/semver": "^7.5.4",
-    "@yarn-tool/ws-find-up-paths": "^1.0.12"
+    "@bluelovers/tsconfig": "^1.0.35",
+    "@types/bluebird": "^3.5.42",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "@types/semver": "^7.5.8",
+    "@yarn-tool/ws-find-up-paths": "^1.0.13"
   },
   "peerDependencies": {
     "@bluelovers/conventional-changelog-bluelovers": "^5.0.27",
-    "@yarn-tool/require-resolve": "^3.0.0",
+    "@yarn-tool/require-resolve": "^3.0.1",
     "lerna": "*",
     "yarn": "*",
     "yarn-tool": "*",

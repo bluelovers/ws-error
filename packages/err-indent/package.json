@@ -79,13 +79,13 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "array-hyper-unique": "^2.1.4",
+    "array-hyper-unique": "^2.1.6",
     "check-iterable": "^1.2.0",
     "clean-stack": "<4 >=3.0.1",
     "err-errors": "^1.0.14",
     "err-stack-meta": "^1.0.17",
     "err-stack-reduce": "^1.0.15",
-    "error-stack2": "^2.0.5",
+    "error-stack2": "^2.0.7",
     "indent-string": "<5 >=4"
   },
   "packageManager": "yarn@^1.22.11"

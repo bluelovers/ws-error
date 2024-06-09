@@ -79,7 +79,7 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "error-stack2": "^2.0.5"
+    "error-stack2": "^2.0.7"
   },
   "packageManager": "yarn@^1.22.11"
 }

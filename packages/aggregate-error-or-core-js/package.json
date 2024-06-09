@@ -78,7 +78,7 @@
     "tsc:showConfig": "ynpx get-current-tsconfig -p"
   },
   "dependencies": {
-    "core-js-pure": "^3.33.0"
+    "core-js-pure": "^3.37.1"
   },
   "packageManager": "yarn@^1.22.11"
 }
